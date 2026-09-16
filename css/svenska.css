@@ -1,0 +1,175 @@
+/* ============================================================
+   Svenska – bok-override (accentfärger)
+   ============================================================
+
+   Läses in EFTER css/geografi.css på alla Svenska-sidor. Samma arkitektur
+   som kemi.css/historia.css: accenterna ligger på BOK-nivå; inga bas-tokens
+   (--brass, --blood …) ersätts.
+
+   Innehåll:
+     1. Tokens och hero-banner   (🎨 ämneseget – signaturfärg)
+     4. Disabled nivåknapp       (plattformsbeteende, avsnitt.js)
+     7. Vinrött i stället för guld/blått (överskrivningslistan ärvd från kemi.css)
+
+   LÅST: --accent #8c3448 (överlämningen).
+   Kontrast (uppmätt): #8c3448 mot --paper 6.0:1, mot --paper-light 6.6:1 → duger
+   som textfärg, därför --accent-text = --accent.
+   Mot mörk hero bara 2.4:1 → .avsnitt-label i heron behåller geografis mässing.
+   GODKÄNT (Joachim 2026-09-16): hero-gradient #1c1116 → #301c24 (mörk vinröd,
+   samma mönster som kemins mörka hero i egen färgfamilj).
+   FÖRSLAG, ej beslutat: --accent-hover #6d2838.
+   ============================================================ */
+
+/* ---------- 1. Tokens ---------- */
+
+:root {
+  --accent: #8c3448;        /* dämpad vintage-vin – svenskans signaturfärg */
+  --accent-2: #b8902a;      /* mässing – sekundär, som geografi */
+  --accent-text: #8c3448;   /* 6.0:1 på paper – ingen mörkare textvariant behövs */
+  --accent-hover: #6d2838;
+  --accent-tint: rgba(140, 52, 72, 0.12);
+  --accent-ram: rgba(140, 52, 72, 0.35);
+}
+
+.hero-banner {
+  background: linear-gradient(180deg, #1c1116 0%, #301c24 100%);
+}
+
+/* ---------- 4. Disabled nivåknapp ---------- */
+/* Sätts av avsnitt.js när nivån saknar innehåll i aktiv underdel.
+   Samma uttryck som .flik[disabled] i geografi.css. */
+.niva-knapp[disabled],
+.niva-knapp[aria-disabled="true"] {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+
+/* ---------- 7. Vinrött i stället för guld/blått (ärvd lista från kemi.css) ----------
+   Allt här är ÖVERSKRIVNINGAR av regler i geografi.css och flipcards.css.
+   geografi.css förblir orörd (byte-identisk med plattformen utom @import-raden).
+   Princip: det eleven klickar på och orienterar sig efter bär bokens färg;
+   papperstexturen (etiketter, ornament, tabeller, hero-brödsmulor) förblir
+   vintageatlas-guld. Fyllda ytor använder --accent-text (kontrast mot paper-text),
+   ramar/linjer --accent, tint --accent-tint.
+   flipcards.css laddas EFTER kemi.css i scaffolden → flipcards-reglerna nedan har
+   höjd specificitet (.flipcards …) så att de vinner oavsett laddningsordning. */
+
+/* Nivåväljare */
+.niva-valjare { border-color: var(--accent-ram); }
+.niva-knapp:hover { background-color: var(--accent-tint); }
+.niva-knapp.aktiv { background-color: var(--accent-text); border-color: var(--accent-text); }
+
+/* Underdelsväljare */
+.underdel-valjare { border-color: var(--accent-ram); }
+.underdel-bokstav { color: var(--accent-text); }
+.underdel-knapp.aktiv { background-color: var(--accent-text); border-color: var(--accent-text); }
+
+/* Flikrad */
+.flikar-rad { border-bottom-color: var(--accent); }
+.flik.aktiv { color: var(--accent-text); border-bottom-color: var(--accent-text); }
+
+/* Brödtext: rubriklinje, länkar utan klass (kort och knappar har klass och rörs inte) */
+.brodtext h2 { border-bottom-color: var(--accent); }
+.sida a:not([class]) { color: var(--accent-text); }
+.tillbaka-lank { color: var(--accent-text); }
+
+/* Kärnpunkter → vinrött; bildguide → terra.
+   Tre rutor, tre färger: vinrött / terra / vinrött-med-ram. */
+.karnpunkter {
+  background-image: linear-gradient(rgba(140, 52, 72, 0.06), rgba(140, 52, 72, 0.06));
+  border-left-color: var(--accent);
+}
+.karnpunkter-rubrik { color: var(--accent-text); }
+.bildguide { border-left-color: var(--terra); }
+.bildguide-rubrik { color: var(--terra); }
+
+/* KOMPENSATION för stavfel i geografi.css: läsbreddsregeln listar
+   `.niva-innehall.brodtext > .karnpunkt` (singular) – klassen heter
+   .karnpunkter, så blocket får aldrig --las-bredd utan går i full sidbredd
+   (1180 px) medan bildguide och stycken ligger på 770 px. 🔵-loggat
+   2026-09-12. Ta bort denna regel när plattformsposten är åtgärdad. */
+.niva-innehall.brodtext > .karnpunkter {
+  max-width: var(--las-bredd);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Djupdykningskort */
+.fordj-kort { border-left-color: var(--accent); }
+.fordj-kort-ikon { color: var(--accent-text); }
+
+/* Kapitel-/delkapitel-/avsnittskort: en kant, vinrött.
+   geografi.css:s .kap-1…6 är Geografis TEMATISKA kapitelfärger (kartografi =
+   mässing, geologi = terrakotta …) som blev en betydelselös positionsrotation
+   när Historia kopierade dem på tre indexnivåer; kapitel 7+ saknar regel (grå).
+   Odokumenterat mönster, 🔵-loggat 2026-09-12. kap-N-klasserna behålls i
+   markupen – bara färgen neutraliseras. Dimmade kort skiljs via opacity. */
+.kapitel-kort[class*="kap-"] { border-left-color: var(--accent); }
+
+/* SKYDDSNÄT – kortets titel och beskrivning på var sin rad.
+   Kanonisk markup (Geografi, referensimplementationen) är
+     <span class="kap-titel">…</span>
+     <p class="kap-beskrivning">…</p>
+   geografi.css sätter aldrig display, så med <span class="kap-beskrivning">
+   (Historias root- och delkapitel-index) flyter titel och beskrivning ihop
+   till en mening. Kemi ska få sex kapitel till som skrivs av från befintliga
+   sidor – regeln finns för att <span>-formen inte ska kunna smyga sig in igen.
+   Den döljer inget: markupen ska ändå vara <p>. */
+.kapitel-kort .kap-titel,
+.kapitel-kort .kap-beskrivning { display: block; }
+
+/* Elevboken-fliken */
+.elevbok-textarea:focus,
+.egen-fraga-input:focus { border-color: var(--accent-text); }
+.lagg-till-fraga-knapp,
+.egen-fraga-spara { background-color: var(--accent-text); border-color: var(--accent); }
+.lagg-till-fraga-knapp:hover { background-color: var(--accent-hover); }
+
+/* Kapitelverktyg (elevbok, begreppsbank, självskattning) */
+.kelev-avsnitt-rubrik,
+.skatt-avsnitt-rubrik { color: var(--accent-text); border-bottom-color: var(--accent-ram); }
+.kelev-textarea:focus,
+.kelev-sok:focus { border-color: var(--accent); }
+.kelev-chip.aktiv { background-color: var(--accent-text); border-color: var(--accent-text); }
+.kelev-nav-lank:hover { border-left-color: var(--accent-text); }
+.matris-avsnitt-rubrik { background-color: rgba(140, 52, 72, 0.16); }
+
+/* Tillbaka-banner på djupdykningar (.tidslinje-header). Plattformsregeln är
+   linear-gradient(--accent → --accent-2); en gradient mellan två olika kulörer läser som två
+   färger med en skarv (samma problem som Geografis blå → guld; Historia undvek
+   det genom ett par i samma familj). Svenska: en yta i vinrött med en subtil
+   mörkare ton av samma kulör för djup. */
+.tidslinje-header {
+  background: linear-gradient(135deg, var(--accent) 0%, #6d2838 100%);
+}
+
+/* Flipcards (Öva-fliken). Korttypsfärgerna grön/blå/röd (📗📘📕) behålls. */
+.flipcards .flip-borja-knapp,
+.flipcards .flip-knapp:not(.sekundar) {
+  background-color: var(--accent-text);
+  border-color: var(--accent-text);
+}
+.flipcards .flip-borja-knapp:hover,
+.flipcards .flip-knapp:not(.sekundar):hover { background-color: var(--accent-hover); }
+.flipcards .flip-progress-fyll { background-color: var(--accent); }
+.flipcards .flip-lage-dropdown { border-color: var(--accent); }
+.flipcards .flip-lage-vald:not([class*="lage-niva"]) { border-color: var(--accent); }
+
+
+/* KOMPENSATION: geografi.css läsbreddsregel (B2) listar inte
+   .vintage-tabell-wrapper, så tabeller i brödtext går i full sidbredd (1180 px)
+   medan texten ligger på 770 px. 🔵 Kandidat för plattformsposten.
+   Ta bort när B2 har åtgärdats i geografi.css. */
+.niva-innehall.brodtext > .vintage-tabell-wrapper {
+  max-width: var(--las-bredd);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Kapitel-/delkapiteltext UNDER korten (Joachim 2026-09-16: eleven ska nå
+   avsnitten utan att scrolla). kapitelstart.css förutsätter texten ÖVER
+   listan, så luften sätts här. */
+.sida > .innehallsforteckning:first-child { margin-top: 2rem; }
+.innehallsforteckning + .kapitel-intro { margin-top: 3rem; }
