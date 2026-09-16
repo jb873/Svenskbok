@@ -1,0 +1,1699 @@
+{
+ "sida": "blandad-ordklasser",
+ "titel": "Blandad övning",
+ "ovar": [
+  "Substantiv",
+  "Verb",
+  "Pronomen",
+  "Adjektiv"
+ ],
+ "antal_versioner": 3,
+ "delar": [
+  {
+   "ordklass": "substantiv",
+   "flik": "Substantiv",
+   "visning": "meningar",
+   "rubrik_steg1": "Steg 1: Hitta",
+   "rubrik_steg2": "Steg 2: Böj",
+   "instruktion_steg1": "Klicka på alla substantiv i meningarna. Namn räknas också som substantiv.",
+   "instruktion_steg2": "Skriv substantivens alla fyra former. Ordet du hittade ska stå i rätt kolumn. Namn böjs inte och är därför inte med i tabellen.",
+   "kolumn_hittat": "Ord i texten",
+   "kolumner": [
+    "Obestämd form singular",
+    "Bestämd form singular",
+    "Obestämd form plural",
+    "Bestämd form plural"
+   ],
+   "exempel": [
+    "hem",
+    "hemmet",
+    "hem",
+    "hemmen"
+   ],
+   "exempel_lemma": null,
+   "meddelanden": {
+    "ratt": "Rätt! {ord} är ett substantiv.",
+    "ratt_namn": "Rätt! {ord} är ett egennamn – det är också ett substantiv.",
+    "ratt_genitiv": "Rätt! {ord} står i genitiv (vems?). Skriv formerna utan -s i tabellen.",
+    "ratt_genitiv_namn": "Rätt! {ord} är ett egennamn i genitiv – det är också ett substantiv.",
+    "ratt_exempel": null,
+    "ratt_valfri": null,
+    "redan": "{ord} har du redan hittat.",
+    "fel": "{ord} är inte ett substantiv. Testa: kan du sätta en, ett, flera, den här eller det här framför ordet?"
+   },
+   "fel_sarskilda": {
+    "hem": "Nästan! Hem kan vara ett substantiv (ett hem), men här svarar ordet på frågan vart? Då är det ett adverb.",
+    "en": "En är en artikel. Den visar att ordet efter står i obestämd form.",
+    "västerut": "Västerut är ett adverb – det svarar på frågan vart?"
+   },
+   "tips_tabell": {
+    "tom": "Tom ruta.",
+    "grundform_fel_kolumn": "Det här är grundformen. Vilken form ska stå här?"
+   },
+   "ratt_sarskilda": {
+    "mormors": "Rätt! Mormors står i genitiv (vems kök?). Skriv formerna utan -s i tabellen."
+   },
+   "versioner": [
+    {
+     "sentences": [
+      "Erik gick hem till Stina och åt middag.",
+      "Sven gick till vänster efter busshållplatsen.",
+      "Berit pratade med barnet.",
+      "Han gick och köpte blocken.",
+      "Flickorna fick vara med och spela fotboll.",
+      "Hon är snart klar med en tavla.",
+      "Mormors kök har blivit gammalmodigt.",
+      "Jag tycker om färgen på bordet.",
+      "Vera tog blomman och satte den i vasen.",
+      "De tycker om att fira jul.",
+      "Tag till vänster i korsningen!",
+      "Sedan gick de mot norr efter floden."
+     ],
+     "names": [
+      "erik",
+      "stina",
+      "sven",
+      "berit",
+      "vera"
+     ],
+     "genitiv": {
+      "mormors": "mormor"
+     },
+     "valfria": {},
+     "neutrala": {
+      "vänster": "Lurigt ord! Riktningar som vänster och norr är inte med i den här övningen.",
+      "norr": "Lurigt ord! Riktningar som vänster och norr är inte med i den här övningen."
+     },
+     "tokens": {
+      "middag": "middag",
+      "busshållplatsen": "busshållplats",
+      "barnet": "barn",
+      "blocken": "block",
+      "flickorna": "flicka",
+      "fotboll": "fotboll",
+      "tavla": "tavla",
+      "kök": "kök",
+      "färgen": "färg",
+      "bordet": "bord",
+      "blomman": "blomma",
+      "vasen": "vas",
+      "jul": "jul",
+      "korsningen": "korsning",
+      "floden": "flod"
+     },
+     "lemmas": {
+      "middag": [
+       "middag",
+       "middagen",
+       "middagar",
+       "middagarna"
+      ],
+      "busshållplats": [
+       "busshållplats",
+       "busshållplatsen",
+       "busshållplatser",
+       "busshållplatserna"
+      ],
+      "barn": [
+       "barn",
+       "barnet",
+       "barn",
+       "barnen"
+      ],
+      "block": [
+       "block",
+       "blocket",
+       "block",
+       "blocken"
+      ],
+      "flicka": [
+       "flicka",
+       "flickan",
+       "flickor",
+       "flickorna"
+      ],
+      "fotboll": [
+       "fotboll",
+       "fotbollen",
+       "fotbollar",
+       "fotbollarna"
+      ],
+      "tavla": [
+       "tavla",
+       "tavlan",
+       "tavlor",
+       "tavlorna"
+      ],
+      "mormor": [
+       "mormor",
+       [
+        "mormodern",
+        "mormorn"
+       ],
+       "mormödrar",
+       "mormödrarna"
+      ],
+      "kök": [
+       "kök",
+       "köket",
+       "kök",
+       "köken"
+      ],
+      "färg": [
+       "färg",
+       "färgen",
+       "färger",
+       "färgerna"
+      ],
+      "bord": [
+       "bord",
+       "bordet",
+       "bord",
+       "borden"
+      ],
+      "blomma": [
+       "blomma",
+       "blomman",
+       "blommor",
+       "blommorna"
+      ],
+      "vas": [
+       "vas",
+       "vasen",
+       "vaser",
+       "vaserna"
+      ],
+      "jul": [
+       "jul",
+       "julen",
+       "jular",
+       "jularna"
+      ],
+      "korsning": [
+       "korsning",
+       "korsningen",
+       "korsningar",
+       "korsningarna"
+      ],
+      "flod": [
+       "flod",
+       "floden",
+       "floder",
+       "floderna"
+      ]
+     }
+    },
+    {
+     "sentences": [
+      "Maja cyklade till Anton och bakade en kaka.",
+      "Leo sprang förbi skolan efter lunchen.",
+      "Nora skrev till läraren.",
+      "Han vaknade och hämtade breven.",
+      "Pojkarna fick följa med och bada i sjön.",
+      "Hon är nästan färdig med en teckning.",
+      "Farfars bil har blivit rostig.",
+      "Jag tycker om ljuset i fönstret.",
+      "Elsa hittade nyckeln och lade den i lådan.",
+      "De längtar efter att öppna presenterna.",
+      "Stäng dörren efter dig!",
+      "Sedan åkte de hem med tåget."
+     ],
+     "names": [
+      "maja",
+      "anton",
+      "leo",
+      "nora",
+      "elsa"
+     ],
+     "genitiv": {
+      "farfars": "farfar"
+     },
+     "valfria": {},
+     "neutrala": {},
+     "tokens": {
+      "kaka": "kaka",
+      "skolan": "skola",
+      "lunchen": "lunch",
+      "läraren": "lärare",
+      "breven": "brev",
+      "pojkarna": "pojke",
+      "sjön": "sjö",
+      "teckning": "teckning",
+      "bil": "bil",
+      "ljuset": "ljus",
+      "fönstret": "fönster",
+      "nyckeln": "nyckel",
+      "lådan": "låda",
+      "presenterna": "present",
+      "dörren": "dörr",
+      "tåget": "tåg"
+     },
+     "lemmas": {
+      "kaka": [
+       "kaka",
+       "kakan",
+       "kakor",
+       "kakorna"
+      ],
+      "skola": [
+       "skola",
+       "skolan",
+       "skolor",
+       "skolorna"
+      ],
+      "lunch": [
+       "lunch",
+       "lunchen",
+       "luncher",
+       "luncherna"
+      ],
+      "lärare": [
+       "lärare",
+       "läraren",
+       "lärare",
+       "lärarna"
+      ],
+      "brev": [
+       "brev",
+       "brevet",
+       "brev",
+       "breven"
+      ],
+      "pojke": [
+       "pojke",
+       "pojken",
+       "pojkar",
+       "pojkarna"
+      ],
+      "sjö": [
+       "sjö",
+       "sjön",
+       "sjöar",
+       "sjöarna"
+      ],
+      "teckning": [
+       "teckning",
+       "teckningen",
+       "teckningar",
+       "teckningarna"
+      ],
+      "farfar": [
+       "farfar",
+       [
+        "farfadern",
+        "farfarn"
+       ],
+       "farfäder",
+       "farfäderna"
+      ],
+      "bil": [
+       "bil",
+       "bilen",
+       "bilar",
+       "bilarna"
+      ],
+      "ljus": [
+       "ljus",
+       "ljuset",
+       "ljus",
+       "ljusen"
+      ],
+      "fönster": [
+       "fönster",
+       "fönstret",
+       "fönster",
+       "fönstren"
+      ],
+      "nyckel": [
+       "nyckel",
+       "nyckeln",
+       "nycklar",
+       "nycklarna"
+      ],
+      "låda": [
+       "låda",
+       "lådan",
+       "lådor",
+       "lådorna"
+      ],
+      "present": [
+       "present",
+       "presenten",
+       "presenter",
+       "presenterna"
+      ],
+      "dörr": [
+       "dörr",
+       "dörren",
+       "dörrar",
+       "dörrarna"
+      ],
+      "tåg": [
+       "tåg",
+       "tåget",
+       "tåg",
+       "tågen"
+      ]
+     }
+    },
+    {
+     "sentences": [
+      "Ella promenerade hem till Hugo och lagade soppa.",
+      "Oskar simmade mot bryggan efter matchen.",
+      "Tilde hälsade på grannen.",
+      "Han vände och plockade äpplena.",
+      "Eleverna fick hänga med och titta på filmen.",
+      "Hon är snart klar med en uppsats.",
+      "Mosters trädgård har blivit vildvuxen.",
+      "Jag tycker om mönstret på mattan.",
+      "Ali tog koppen och ställde den på hyllan.",
+      "De drömmer om att resa till havet.",
+      "Sätt dig vid bordet!",
+      "Sedan cyklade de västerut längs stranden."
+     ],
+     "names": [
+      "ella",
+      "hugo",
+      "oskar",
+      "tilde",
+      "ali"
+     ],
+     "genitiv": {
+      "mosters": "moster"
+     },
+     "valfria": {},
+     "neutrala": {},
+     "tokens": {
+      "soppa": "soppa",
+      "bryggan": "brygga",
+      "matchen": "match",
+      "grannen": "granne",
+      "äpplena": "äpple",
+      "eleverna": "elev",
+      "filmen": "film",
+      "uppsats": "uppsats",
+      "trädgård": "trädgård",
+      "mönstret": "mönster",
+      "mattan": "matta",
+      "koppen": "kopp",
+      "hyllan": "hylla",
+      "havet": "hav",
+      "bordet": "bord",
+      "stranden": "strand"
+     },
+     "lemmas": {
+      "soppa": [
+       "soppa",
+       "soppan",
+       "soppor",
+       "sopporna"
+      ],
+      "brygga": [
+       "brygga",
+       "bryggan",
+       "bryggor",
+       "bryggorna"
+      ],
+      "match": [
+       "match",
+       "matchen",
+       "matcher",
+       "matcherna"
+      ],
+      "granne": [
+       "granne",
+       "grannen",
+       "grannar",
+       "grannarna"
+      ],
+      "äpple": [
+       "äpple",
+       "äpplet",
+       "äpplen",
+       "äpplena"
+      ],
+      "elev": [
+       "elev",
+       "eleven",
+       "elever",
+       "eleverna"
+      ],
+      "film": [
+       "film",
+       "filmen",
+       "filmer",
+       "filmerna"
+      ],
+      "uppsats": [
+       "uppsats",
+       "uppsatsen",
+       "uppsatser",
+       "uppsatserna"
+      ],
+      "moster": [
+       "moster",
+       "mostern",
+       "mostrar",
+       "mostrarna"
+      ],
+      "trädgård": [
+       "trädgård",
+       "trädgården",
+       "trädgårdar",
+       "trädgårdarna"
+      ],
+      "mönster": [
+       "mönster",
+       "mönstret",
+       "mönster",
+       "mönstren"
+      ],
+      "matta": [
+       "matta",
+       "mattan",
+       "mattor",
+       "mattorna"
+      ],
+      "kopp": [
+       "kopp",
+       "koppen",
+       "koppar",
+       "kopparna"
+      ],
+      "hylla": [
+       "hylla",
+       "hyllan",
+       "hyllor",
+       "hyllorna"
+      ],
+      "hav": [
+       "hav",
+       "havet",
+       "hav",
+       "haven"
+      ],
+      "bord": [
+       "bord",
+       "bordet",
+       "bord",
+       "borden"
+      ],
+      "strand": [
+       "strand",
+       "stranden",
+       "stränder",
+       "stränderna"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "ordklass": "verb",
+   "flik": "Verb",
+   "visning": "meningar",
+   "rubrik_steg1": "Steg 1: Hitta",
+   "rubrik_steg2": "Steg 2: Böj",
+   "instruktion_steg1": "Klicka på alla verb i meningarna. Ett verb som finns i flera meningar ska markeras varje gång.",
+   "instruktion_steg2": "Skriv verbens alla fyra former. Samma verb står bara en gång i tabellen.",
+   "kolumn_hittat": "Ord i texten",
+   "kolumner": [
+    "Infinitiv",
+    "Presens",
+    "Preteritum",
+    "Supinum"
+   ],
+   "exempel": [
+    "gå",
+    "går",
+    "gick",
+    "gått"
+   ],
+   "exempel_lemma": "gå",
+   "meddelanden": {
+    "ratt": "Rätt! {ord} är ett verb.",
+    "ratt_namn": null,
+    "ratt_genitiv": null,
+    "ratt_genitiv_namn": null,
+    "ratt_exempel": "Rätt! {ord} kommer från gå, som redan finns som exempel i tabellen.",
+    "ratt_valfri": null,
+    "redan": "{ord} har du redan hittat.",
+    "fel": "{ord} är inte ett verb. Testa: kan du sätta att framför, eller byta tid på ordet?"
+   },
+   "fel_sarskilda": {
+    "att": "Att är ett infinitivmärke. Klicka på verbet efter.",
+    "med": "Med hör till verbet framför. Klicka på själva verbet.",
+    "om": "Om hör till verbet framför. Klicka på själva verbet.",
+    "på": "På hör till verbet framför här. Klicka på själva verbet.",
+    "klar": "Klar är ett adjektiv – det beskriver hur hon är.",
+    "färdig": "Färdig är ett adjektiv – det beskriver hur hon är.",
+    "gammalmodigt": "Gammalmodigt är ett adjektiv.",
+    "rostig": "Rostig är ett adjektiv.",
+    "vildvuxen": "Vildvuxen är ett adjektiv."
+   },
+   "tips_tabell": {
+    "tom": "Tom ruta.",
+    "grundform_fel_kolumn": "Det här är infinitiv. Vilken form ska stå här?"
+   },
+   "ratt_sarskilda": {
+    "har": "Rätt! Har är ett hjälpverb här (har blivit).",
+    "är": "Rätt! Är är presens av vara.",
+    "tag": "Rätt! Tag är imperativ, en uppmaning. Infinitiv: ta.",
+    "stäng": "Rätt! Stäng är imperativ, en uppmaning. Infinitiv: stänga.",
+    "sätt": "Rätt! Sätt är imperativ, en uppmaning. Infinitiv: sätta.",
+    "blivit": "Rätt! Blivit är supinum av bli."
+   },
+   "versioner": [
+    {
+     "sentences": [
+      "Erik gick hem till Stina och åt middag.",
+      "Sven gick till vänster efter busshållplatsen.",
+      "Berit pratade med barnet.",
+      "Han gick och köpte blocken.",
+      "Flickorna fick vara med och spela fotboll.",
+      "Hon är snart klar med en tavla.",
+      "Mormors kök har blivit gammalmodigt.",
+      "Jag tycker om färgen på bordet.",
+      "Vera tog blomman och satte den i vasen.",
+      "De tycker om att fira jul.",
+      "Tag till vänster i korsningen!",
+      "Sedan gick de mot norr efter floden."
+     ],
+     "names": [],
+     "genitiv": {},
+     "valfria": {},
+     "neutrala": {},
+     "tokens": {
+      "gick": "gå",
+      "åt": "äta",
+      "pratade": "prata",
+      "köpte": "köpa",
+      "fick": "få",
+      "vara": "vara",
+      "spela": "spela",
+      "är": "vara",
+      "har": "ha",
+      "blivit": "bli",
+      "tycker": "tycka",
+      "tog": "ta",
+      "satte": "sätta",
+      "fira": "fira",
+      "tag": "ta"
+     },
+     "lemmas": {
+      "gå": [
+       "gå",
+       "går",
+       "gick",
+       "gått"
+      ],
+      "äta": [
+       "äta",
+       "äter",
+       "åt",
+       "ätit"
+      ],
+      "prata": [
+       "prata",
+       "pratar",
+       "pratade",
+       "pratat"
+      ],
+      "köpa": [
+       "köpa",
+       "köper",
+       "köpte",
+       "köpt"
+      ],
+      "få": [
+       "få",
+       "får",
+       "fick",
+       "fått"
+      ],
+      "vara": [
+       "vara",
+       "är",
+       "var",
+       "varit"
+      ],
+      "spela": [
+       "spela",
+       "spelar",
+       "spelade",
+       "spelat"
+      ],
+      "ha": [
+       "ha",
+       "har",
+       "hade",
+       "haft"
+      ],
+      "bli": [
+       "bli",
+       "blir",
+       "blev",
+       "blivit"
+      ],
+      "tycka": [
+       "tycka",
+       "tycker",
+       "tyckte",
+       "tyckt"
+      ],
+      "ta": [
+       [
+        "ta",
+        "taga"
+       ],
+       [
+        "tar",
+        "tager"
+       ],
+       "tog",
+       "tagit"
+      ],
+      "sätta": [
+       "sätta",
+       "sätter",
+       "satte",
+       "satt"
+      ],
+      "fira": [
+       "fira",
+       "firar",
+       "firade",
+       "firat"
+      ]
+     }
+    },
+    {
+     "sentences": [
+      "Maja cyklade till Anton och bakade en kaka.",
+      "Leo sprang förbi skolan efter lunchen.",
+      "Nora skrev till läraren.",
+      "Han vaknade och hämtade breven.",
+      "Pojkarna fick följa med och bada i sjön.",
+      "Hon är nästan färdig med en teckning.",
+      "Farfars bil har blivit rostig.",
+      "Jag tycker om ljuset i fönstret.",
+      "Elsa hittade nyckeln och lade den i lådan.",
+      "De längtar efter att öppna presenterna.",
+      "Stäng dörren efter dig!",
+      "Sedan åkte de hem med tåget."
+     ],
+     "names": [],
+     "genitiv": {},
+     "valfria": {},
+     "neutrala": {},
+     "tokens": {
+      "cyklade": "cykla",
+      "bakade": "baka",
+      "sprang": "springa",
+      "skrev": "skriva",
+      "vaknade": "vakna",
+      "hämtade": "hämta",
+      "fick": "få",
+      "följa": "följa",
+      "bada": "bada",
+      "är": "vara",
+      "har": "ha",
+      "blivit": "bli",
+      "tycker": "tycka",
+      "hittade": "hitta",
+      "lade": "lägga",
+      "längtar": "längta",
+      "öppna": "öppna",
+      "stäng": "stänga",
+      "åkte": "åka"
+     },
+     "lemmas": {
+      "cykla": [
+       "cykla",
+       "cyklar",
+       "cyklade",
+       "cyklat"
+      ],
+      "baka": [
+       "baka",
+       "bakar",
+       "bakade",
+       "bakat"
+      ],
+      "springa": [
+       "springa",
+       "springer",
+       "sprang",
+       "sprungit"
+      ],
+      "skriva": [
+       "skriva",
+       "skriver",
+       "skrev",
+       "skrivit"
+      ],
+      "vakna": [
+       "vakna",
+       "vaknar",
+       "vaknade",
+       "vaknat"
+      ],
+      "hämta": [
+       "hämta",
+       "hämtar",
+       "hämtade",
+       "hämtat"
+      ],
+      "få": [
+       "få",
+       "får",
+       "fick",
+       "fått"
+      ],
+      "följa": [
+       "följa",
+       "följer",
+       "följde",
+       "följt"
+      ],
+      "bada": [
+       "bada",
+       "badar",
+       "badade",
+       "badat"
+      ],
+      "vara": [
+       "vara",
+       "är",
+       "var",
+       "varit"
+      ],
+      "ha": [
+       "ha",
+       "har",
+       "hade",
+       "haft"
+      ],
+      "bli": [
+       "bli",
+       "blir",
+       "blev",
+       "blivit"
+      ],
+      "tycka": [
+       "tycka",
+       "tycker",
+       "tyckte",
+       "tyckt"
+      ],
+      "hitta": [
+       "hitta",
+       "hittar",
+       "hittade",
+       "hittat"
+      ],
+      "lägga": [
+       "lägga",
+       "lägger",
+       [
+        "lade",
+        "la"
+       ],
+       "lagt"
+      ],
+      "längta": [
+       "längta",
+       "längtar",
+       "längtade",
+       "längtat"
+      ],
+      "öppna": [
+       "öppna",
+       "öppnar",
+       "öppnade",
+       "öppnat"
+      ],
+      "stänga": [
+       "stänga",
+       "stänger",
+       "stängde",
+       "stängt"
+      ],
+      "åka": [
+       "åka",
+       "åker",
+       "åkte",
+       "åkt"
+      ]
+     }
+    },
+    {
+     "sentences": [
+      "Ella promenerade hem till Hugo och lagade soppa.",
+      "Oskar simmade mot bryggan efter matchen.",
+      "Tilde hälsade på grannen.",
+      "Han vände och plockade äpplena.",
+      "Eleverna fick hänga med och titta på filmen.",
+      "Hon är snart klar med en uppsats.",
+      "Mosters trädgård har blivit vildvuxen.",
+      "Jag tycker om mönstret på mattan.",
+      "Ali tog koppen och ställde den på hyllan.",
+      "De drömmer om att resa till havet.",
+      "Sätt dig vid bordet!",
+      "Sedan cyklade de västerut längs stranden."
+     ],
+     "names": [],
+     "genitiv": {},
+     "valfria": {},
+     "neutrala": {},
+     "tokens": {
+      "promenerade": "promenera",
+      "lagade": "laga",
+      "simmade": "simma",
+      "hälsade": "hälsa",
+      "vände": "vända",
+      "plockade": "plocka",
+      "fick": "få",
+      "hänga": "hänga",
+      "titta": "titta",
+      "är": "vara",
+      "har": "ha",
+      "blivit": "bli",
+      "tycker": "tycka",
+      "tog": "ta",
+      "ställde": "ställa",
+      "drömmer": "drömma",
+      "resa": "resa",
+      "sätt": "sätta",
+      "cyklade": "cykla"
+     },
+     "lemmas": {
+      "promenera": [
+       "promenera",
+       "promenerar",
+       "promenerade",
+       "promenerat"
+      ],
+      "laga": [
+       "laga",
+       "lagar",
+       "lagade",
+       "lagat"
+      ],
+      "simma": [
+       "simma",
+       "simmar",
+       "simmade",
+       "simmat"
+      ],
+      "hälsa": [
+       "hälsa",
+       "hälsar",
+       "hälsade",
+       "hälsat"
+      ],
+      "vända": [
+       "vända",
+       "vänder",
+       "vände",
+       "vänt"
+      ],
+      "plocka": [
+       "plocka",
+       "plockar",
+       "plockade",
+       "plockat"
+      ],
+      "få": [
+       "få",
+       "får",
+       "fick",
+       "fått"
+      ],
+      "hänga": [
+       "hänga",
+       "hänger",
+       "hängde",
+       "hängt"
+      ],
+      "titta": [
+       "titta",
+       "tittar",
+       "tittade",
+       "tittat"
+      ],
+      "vara": [
+       "vara",
+       "är",
+       "var",
+       "varit"
+      ],
+      "ha": [
+       "ha",
+       "har",
+       "hade",
+       "haft"
+      ],
+      "bli": [
+       "bli",
+       "blir",
+       "blev",
+       "blivit"
+      ],
+      "tycka": [
+       "tycka",
+       "tycker",
+       "tyckte",
+       "tyckt"
+      ],
+      "ta": [
+       [
+        "ta",
+        "taga"
+       ],
+       [
+        "tar",
+        "tager"
+       ],
+       "tog",
+       "tagit"
+      ],
+      "ställa": [
+       "ställa",
+       "ställer",
+       "ställde",
+       "ställt"
+      ],
+      "drömma": [
+       "drömma",
+       "drömmer",
+       "drömde",
+       "drömt"
+      ],
+      "resa": [
+       "resa",
+       "reser",
+       "reste",
+       "rest"
+      ],
+      "sätta": [
+       "sätta",
+       "sätter",
+       "satte",
+       "satt"
+      ],
+      "cykla": [
+       "cykla",
+       "cyklar",
+       "cyklade",
+       "cyklat"
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "ordklass": "pronomen",
+   "flik": "Pronomen",
+   "visning": "meningar",
+   "rubrik_steg1": "Steg 1: Hitta",
+   "rubrik_steg2": "Steg 2: Subjektform och objektform",
+   "instruktion_steg1": "Klicka på alla pronomen i meningarna.",
+   "instruktion_steg2": "Skriv varje pronomen i både subjektform och objektform.",
+   "kolumn_hittat": "Ord i texten",
+   "kolumner": [
+    "Subjektform",
+    "Objektform"
+   ],
+   "exempel": null,
+   "exempel_lemma": null,
+   "meddelanden": {
+    "ratt": "Rätt! {ord} är ett personligt pronomen.",
+    "ratt_namn": null,
+    "ratt_genitiv": null,
+    "ratt_genitiv_namn": null,
+    "ratt_exempel": null,
+    "ratt_valfri": null,
+    "redan": "{ord} har du redan hittat.",
+    "fel": "{ord} är inte ett pronomen. Pronomen står i stället för ett namn eller ett substantiv."
+   },
+   "fel_sarskilda": {
+    "en": "En är en artikel, inte ett pronomen.",
+    "mormors": "Mormors är ett substantiv i genitiv.",
+    "farfars": "Farfars är ett substantiv i genitiv.",
+    "mosters": "Mosters är ett substantiv i genitiv."
+   },
+   "tips_tabell": {
+    "tom": "Tom ruta.",
+    "dom": "Dom är talspråk. Skriv dem."
+   },
+   "ratt_sarskilda": {},
+   "versioner": [
+    {
+     "sentences": [
+      "Erik gick hem till Stina och åt middag.",
+      "Sven gick till vänster efter busshållplatsen.",
+      "Berit pratade med barnet.",
+      "Han gick och köpte blocken.",
+      "Flickorna fick vara med och spela fotboll.",
+      "Hon är snart klar med en tavla.",
+      "Mormors kök har blivit gammalmodigt.",
+      "Jag tycker om färgen på bordet.",
+      "Vera tog blomman och satte den i vasen.",
+      "De tycker om att fira jul.",
+      "Tag till vänster i korsningen!",
+      "Sedan gick de mot norr efter floden."
+     ],
+     "names": [],
+     "genitiv": {},
+     "valfria": {},
+     "neutrala": {},
+     "tokens": {
+      "han": "han",
+      "hon": "hon",
+      "jag": "jag",
+      "den": "den",
+      "de": "de"
+     },
+     "lemmas": {
+      "han": [
+       "han",
+       "honom"
+      ],
+      "hon": [
+       "hon",
+       "henne"
+      ],
+      "jag": [
+       "jag",
+       [
+        "mig",
+        "mej"
+       ]
+      ],
+      "den": [
+       "den",
+       "den"
+      ],
+      "de": [
+       "de",
+       "dem"
+      ]
+     }
+    },
+    {
+     "sentences": [
+      "Maja cyklade till Anton och bakade en kaka.",
+      "Leo sprang förbi skolan efter lunchen.",
+      "Nora skrev till läraren.",
+      "Han vaknade och hämtade breven.",
+      "Pojkarna fick följa med och bada i sjön.",
+      "Hon är nästan färdig med en teckning.",
+      "Farfars bil har blivit rostig.",
+      "Jag tycker om ljuset i fönstret.",
+      "Elsa hittade nyckeln och lade den i lådan.",
+      "De längtar efter att öppna presenterna.",
+      "Stäng dörren efter dig!",
+      "Sedan åkte de hem med tåget."
+     ],
+     "names": [],
+     "genitiv": {},
+     "valfria": {},
+     "neutrala": {},
+     "tokens": {
+      "han": "han",
+      "hon": "hon",
+      "jag": "jag",
+      "den": "den",
+      "de": "de",
+      "dig": "du"
+     },
+     "lemmas": {
+      "han": [
+       "han",
+       "honom"
+      ],
+      "hon": [
+       "hon",
+       "henne"
+      ],
+      "jag": [
+       "jag",
+       [
+        "mig",
+        "mej"
+       ]
+      ],
+      "den": [
+       "den",
+       "den"
+      ],
+      "de": [
+       "de",
+       "dem"
+      ],
+      "du": [
+       "du",
+       [
+        "dig",
+        "dej"
+       ]
+      ]
+     }
+    },
+    {
+     "sentences": [
+      "Ella promenerade hem till Hugo och lagade soppa.",
+      "Oskar simmade mot bryggan efter matchen.",
+      "Tilde hälsade på grannen.",
+      "Han vände och plockade äpplena.",
+      "Eleverna fick hänga med och titta på filmen.",
+      "Hon är snart klar med en uppsats.",
+      "Mosters trädgård har blivit vildvuxen.",
+      "Jag tycker om mönstret på mattan.",
+      "Ali tog koppen och ställde den på hyllan.",
+      "De drömmer om att resa till havet.",
+      "Sätt dig vid bordet!",
+      "Sedan cyklade de västerut längs stranden."
+     ],
+     "names": [],
+     "genitiv": {},
+     "valfria": {},
+     "neutrala": {},
+     "tokens": {
+      "han": "han",
+      "hon": "hon",
+      "jag": "jag",
+      "den": "den",
+      "de": "de",
+      "dig": "du"
+     },
+     "lemmas": {
+      "han": [
+       "han",
+       "honom"
+      ],
+      "hon": [
+       "hon",
+       "henne"
+      ],
+      "jag": [
+       "jag",
+       [
+        "mig",
+        "mej"
+       ]
+      ],
+      "den": [
+       "den",
+       "den"
+      ],
+      "de": [
+       "de",
+       "dem"
+      ],
+      "du": [
+       "du",
+       [
+        "dig",
+        "dej"
+       ]
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "ordklass": "adjektiv",
+   "flik": "Adjektiv",
+   "visning": "lopande",
+   "rubrik_steg1": "Steg 1: Hitta",
+   "rubrik_steg2": "Steg 2: Komparera",
+   "instruktion_steg1": "Klicka på alla adjektiv i texten.",
+   "instruktion_steg2": "Komparera adjektiven. Skriv grundformen under Positiv, även om ordet står i en annan form i texten.",
+   "kolumn_hittat": "Ord i texten",
+   "kolumner": [
+    "Positiv",
+    "Komparativ",
+    "Superlativ"
+   ],
+   "exempel": null,
+   "exempel_lemma": null,
+   "meddelanden": {
+    "ratt": "Rätt! {ord} är ett adjektiv.",
+    "ratt_namn": null,
+    "ratt_genitiv": null,
+    "ratt_genitiv_namn": null,
+    "ratt_exempel": null,
+    "ratt_valfri": "Bra hittat! {ord} är ett particip som fungerar som adjektiv. Det räknas som extra.",
+    "redan": "{ord} har du redan hittat.",
+    "fel": "{ord} är inte ett adjektiv. Adjektiv beskriver hur något är – testa om ordet går att jämföra: mer eller mest?"
+   },
+   "fel_sarskilda": {
+    "alla": "Alla är ett pronomen.",
+    "ingen": "Ingen är ett pronomen.",
+    "riktigt": "Riktigt är ett adverb här – det beskriver verbet.",
+    "hittills": "Hittills är ett adverb.",
+    "faktiskt": "Faktiskt är ett adverb.",
+    "försiktigt": "Försiktigt är ett adverb här – det beskriver hur vinden blåste.",
+    "ännu": "Ännu är ett adverb.",
+    "juletid": "Juletid är ett substantiv.",
+    "sommartid": "Sommartid är ett substantiv.",
+    "novemberdag": "Novemberdag är ett substantiv.",
+    "förtjusning": "Förtjusning är ett substantiv.",
+    "irritation": "Irritation är ett substantiv.",
+    "frusit": "Frusit är ett verb (supinum av frysa)."
+   },
+   "tips_tabell": {
+    "tom": "Tom ruta.",
+    "positiv_grundform": "Skriv grundformen."
+   },
+   "ratt_sarskilda": {
+    "hårdaste": "Rätt! Hårdaste är redan superlativ. Vad är grundformen?",
+    "dåliga": "Rätt! Dåliga kommer från dålig. Titta noga när du komparerar!",
+    "gladaste": "Rätt! Gladaste är redan superlativ. Vad är grundformen?",
+    "mjukaste": "Rätt! Mjukaste är redan superlativ. Vad är grundformen?",
+    "soligaste": "Rätt! Soligaste är redan superlativ. Vad är grundformen?",
+    "kraftigaste": "Rätt! Kraftigaste är redan superlativ. Vad är grundformen?",
+    "jobbigaste": "Rätt! Jobbigaste är redan superlativ. Vad är grundformen?",
+    "dystrare": "Rätt! Dystrare är redan komparativ. Vad är grundformen?",
+    "små": "Rätt! Små är plural av liten. Titta noga när du komparerar!",
+    "gamla": "Rätt! Gamla kommer från gammal. Titta noga när du komparerar!"
+   },
+   "versioner": [
+    {
+     "sentences": [
+      "Det hade varit en lång, kall dag.",
+      "På TV hade de lovat vackert väder, och det löftet hade de ju inte hållit.",
+      "Människor hade frusit i det hårdaste regnet på hela året, sprungit irriterade från gråa hållplatser till fulla bussar och muttrat arga ord om det dåliga vädret.",
+      "Alla var stressade över tråkiga ärenden som hörde till det som skulle bli årets gladaste högtid.",
+      "Dyra julklappar skulle köpas, små och stora paket skulle slås in i fina papper.",
+      "Den lätta snön som skulle falla hade hittills bestått av slisk som blivit slask på hala vägar.",
+      "Det var en trevlig tid, juletid, det visste ju alla, men ingen kunde riktigt trivas."
+     ],
+     "names": [],
+     "genitiv": {},
+     "neutrala": {},
+     "valfria": {
+      "irriterade": "irriterad",
+      "stressade": "stressad"
+     },
+     "tokens": {
+      "lång": "lång",
+      "kall": "kall",
+      "vackert": "vacker",
+      "hårdaste": "hård",
+      "gråa": "grå",
+      "fulla": "full",
+      "arga": "arg",
+      "dåliga": "dålig",
+      "tråkiga": "tråkig",
+      "gladaste": "glad",
+      "dyra": "dyr",
+      "små": "liten",
+      "stora": "stor",
+      "fina": "fin",
+      "lätta": "lätt",
+      "hala": "hal",
+      "trevlig": "trevlig"
+     },
+     "lemmas": {
+      "lång": [
+       "lång",
+       "längre",
+       "längst"
+      ],
+      "kall": [
+       "kall",
+       "kallare",
+       "kallast"
+      ],
+      "vacker": [
+       "vacker",
+       "vackrare",
+       "vackrast"
+      ],
+      "hård": [
+       "hård",
+       "hårdare",
+       "hårdast"
+      ],
+      "grå": [
+       "grå",
+       "gråare",
+       "gråast"
+      ],
+      "full": [
+       "full",
+       "fullare",
+       "fullast"
+      ],
+      "arg": [
+       "arg",
+       "argare",
+       "argast"
+      ],
+      "dålig": [
+       "dålig",
+       [
+        "sämre",
+        "dåligare"
+       ],
+       [
+        "sämst",
+        "dåligast"
+       ]
+      ],
+      "tråkig": [
+       "tråkig",
+       "tråkigare",
+       "tråkigast"
+      ],
+      "glad": [
+       "glad",
+       "gladare",
+       "gladast"
+      ],
+      "dyr": [
+       "dyr",
+       "dyrare",
+       "dyrast"
+      ],
+      "liten": [
+       "liten",
+       "mindre",
+       "minst"
+      ],
+      "stor": [
+       "stor",
+       "större",
+       "störst"
+      ],
+      "fin": [
+       "fin",
+       "finare",
+       "finast"
+      ],
+      "lätt": [
+       "lätt",
+       "lättare",
+       "lättast"
+      ],
+      "hal": [
+       "hal",
+       "halare",
+       "halast"
+      ],
+      "trevlig": [
+       "trevlig",
+       "trevligare",
+       "trevligast"
+      ],
+      "irriterad": [
+       "irriterad",
+       "mer irriterad",
+       "mest irriterad"
+      ],
+      "stressad": [
+       "stressad",
+       "mer stressad",
+       "mest stressad"
+      ]
+     }
+    },
+    {
+     "sentences": [
+      "Det hade varit en varm, lugn kväll.",
+      "I radion hade de lovat klart väder, och det hade faktiskt stämt.",
+      "Barnen hade lekt i den mjukaste sanden, sprungit glada från höga klippor ner till kalla vågor och skrattat med ljusa röster av ren förtjusning.",
+      "Alla var trötta efter långa dagar som hörde till årets soligaste vecka.",
+      "Gamla filtar skulle bäras hem, små och stora hinkar skulle sköljas i salt vatten.",
+      "Den svala vinden från havet blåste försiktigt över tysta stränder.",
+      "Det var en härlig tid, sommartid, det visste ju alla, och ingen ville att den skulle ta slut."
+     ],
+     "names": [],
+     "genitiv": {},
+     "neutrala": {},
+     "valfria": {},
+     "tokens": {
+      "varm": "varm",
+      "lugn": "lugn",
+      "klart": "klar",
+      "mjukaste": "mjuk",
+      "glada": "glad",
+      "höga": "hög",
+      "kalla": "kall",
+      "ljusa": "ljus",
+      "ren": "ren",
+      "trötta": "trött",
+      "långa": "lång",
+      "soligaste": "solig",
+      "gamla": "gammal",
+      "små": "liten",
+      "stora": "stor",
+      "salt": "salt",
+      "svala": "sval",
+      "tysta": "tyst",
+      "härlig": "härlig"
+     },
+     "lemmas": {
+      "varm": [
+       "varm",
+       "varmare",
+       "varmast"
+      ],
+      "lugn": [
+       "lugn",
+       "lugnare",
+       "lugnast"
+      ],
+      "klar": [
+       "klar",
+       "klarare",
+       "klarast"
+      ],
+      "mjuk": [
+       "mjuk",
+       "mjukare",
+       "mjukast"
+      ],
+      "glad": [
+       "glad",
+       "gladare",
+       "gladast"
+      ],
+      "hög": [
+       "hög",
+       "högre",
+       "högst"
+      ],
+      "kall": [
+       "kall",
+       "kallare",
+       "kallast"
+      ],
+      "ljus": [
+       "ljus",
+       "ljusare",
+       "ljusast"
+      ],
+      "ren": [
+       "ren",
+       "renare",
+       "renast"
+      ],
+      "trött": [
+       "trött",
+       "tröttare",
+       "tröttast"
+      ],
+      "lång": [
+       "lång",
+       "längre",
+       "längst"
+      ],
+      "solig": [
+       "solig",
+       "soligare",
+       "soligast"
+      ],
+      "gammal": [
+       "gammal",
+       "äldre",
+       "äldst"
+      ],
+      "liten": [
+       "liten",
+       "mindre",
+       "minst"
+      ],
+      "stor": [
+       "stor",
+       "större",
+       "störst"
+      ],
+      "salt": [
+       "salt",
+       "saltare",
+       "saltast"
+      ],
+      "sval": [
+       "sval",
+       "svalare",
+       "svalast"
+      ],
+      "tyst": [
+       "tyst",
+       "tystare",
+       "tystast"
+      ],
+      "härlig": [
+       "härlig",
+       "härligare",
+       "härligast"
+      ]
+     }
+    },
+    {
+     "sentences": [
+      "Det hade varit en mörk, blåsig morgon.",
+      "I appen hade de lovat torrt väder, men det stämde inte alls.",
+      "Eleverna hade cyklat genom det kraftigaste regnet, klivit trötta av smutsiga cyklar vid tomma ställ och skakat av sig med hesa suckar av stor irritation.",
+      "Alla var sura över tunga läxor som hörde till terminens jobbigaste vecka.",
+      "Blöta jackor skulle hängas upp, korta och långa halsdukar skulle torka på varma element.",
+      "Den tjocka dimman som låg över skolgården gjorde de grå husen ännu dystrare.",
+      "Det var en vanlig dag, novemberdag, det visste ju alla, men ingen kunde låta bli att längta efter sommaren."
+     ],
+     "names": [],
+     "genitiv": {},
+     "neutrala": {},
+     "valfria": {},
+     "tokens": {
+      "mörk": "mörk",
+      "blåsig": "blåsig",
+      "torrt": "torr",
+      "kraftigaste": "kraftig",
+      "trötta": "trött",
+      "smutsiga": "smutsig",
+      "tomma": "tom",
+      "hesa": "hes",
+      "stor": "stor",
+      "sura": "sur",
+      "tunga": "tung",
+      "jobbigaste": "jobbig",
+      "blöta": "blöt",
+      "korta": "kort",
+      "långa": "lång",
+      "varma": "varm",
+      "tjocka": "tjock",
+      "grå": "grå",
+      "dystrare": "dyster",
+      "vanlig": "vanlig"
+     },
+     "lemmas": {
+      "mörk": [
+       "mörk",
+       "mörkare",
+       "mörkast"
+      ],
+      "blåsig": [
+       "blåsig",
+       "blåsigare",
+       "blåsigast"
+      ],
+      "torr": [
+       "torr",
+       "torrare",
+       "torrast"
+      ],
+      "kraftig": [
+       "kraftig",
+       "kraftigare",
+       "kraftigast"
+      ],
+      "trött": [
+       "trött",
+       "tröttare",
+       "tröttast"
+      ],
+      "smutsig": [
+       "smutsig",
+       "smutsigare",
+       "smutsigast"
+      ],
+      "tom": [
+       "tom",
+       "tommare",
+       "tommast"
+      ],
+      "hes": [
+       "hes",
+       "hesare",
+       "hesast"
+      ],
+      "stor": [
+       "stor",
+       "större",
+       "störst"
+      ],
+      "sur": [
+       "sur",
+       "surare",
+       "surast"
+      ],
+      "tung": [
+       "tung",
+       "tyngre",
+       "tyngst"
+      ],
+      "jobbig": [
+       "jobbig",
+       "jobbigare",
+       "jobbigast"
+      ],
+      "blöt": [
+       "blöt",
+       "blötare",
+       "blötast"
+      ],
+      "kort": [
+       "kort",
+       "kortare",
+       "kortast"
+      ],
+      "lång": [
+       "lång",
+       "längre",
+       "längst"
+      ],
+      "varm": [
+       "varm",
+       "varmare",
+       "varmast"
+      ],
+      "tjock": [
+       "tjock",
+       "tjockare",
+       "tjockast"
+      ],
+      "grå": [
+       "grå",
+       "gråare",
+       "gråast"
+      ],
+      "dyster": [
+       "dyster",
+       "dystrare",
+       "dystrast"
+      ],
+      "vanlig": [
+       "vanlig",
+       "vanligare",
+       "vanligast"
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

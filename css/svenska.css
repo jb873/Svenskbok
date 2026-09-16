@@ -216,7 +216,8 @@
    listan, så luften sätts här. */
 .sida > .innehallsforteckning:first-child,
 .sida > .brodsmulor + .innehallsforteckning { margin-top: 0; }
-.innehallsforteckning + .kapitel-intro { margin-top: 3rem; }
+.innehallsforteckning + .kapitel-intro,
+.sektion-avgransare + .kapitel-intro { margin-top: 3rem; }   /* texten sist, även efter ett verktygs-/övningsblock (arbetsorder 03) */
 
 
 /* ---------- 8. Öva-övningen (js/ordklass-ova.js, arbetsorder 02) ----------
@@ -274,6 +275,39 @@
   border-color: var(--accent-text);
 }
 
+/* Sidhuvud och delflikar (form B, blandad övning – arbetsorder 03).
+   Delflikarna lånar uttrycket från .flikar-rad/.flik men har egna klasser,
+   eftersom avsnitt.js fångar .flik. */
+.ordova-ovar {
+  text-align: center;
+  color: var(--muted);
+  margin: 0 0 1rem;
+}
+.ordova-delar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  border-bottom: 1px solid var(--brass);
+  margin: 0 0 2rem;
+}
+.ordova-del {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 0.6rem 0.4rem;
+  margin-bottom: -1px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.ordova-del:hover { color: var(--ink); }
+.ordova-del.aktiv { color: var(--accent-text); border-bottom-color: var(--accent-text); }
+
 /* Steg */
 .ordova-steg + .ordova-steg { margin-top: 2.5rem; }
 .ordova-rubrik {
@@ -301,6 +335,11 @@
 .ordova-ord:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 .ordova-ord.hittad { color: #4a6d2a; background-color: #e4ecdd; }
 .ordova-ord.fel { color: #b04a2a; background-color: #f3e0d9; }
+/* Neutralt ord (t.ex. riktningar i substantivövningen): grå, bevaras.
+   Tonen är --muted (#625646) på 12 % – samma styrka som --accent-tint. Ingen token. */
+.ordova-ord.neutral { color: var(--muted); background-color: rgba(98, 86, 70, 0.12); }
+/* visning "lopande": meningarna som ett stycke */
+.ordova-lopande { margin: 0 0 1em; }
 
 /* Statusrad: meddelande + räknare */
 .ordova-status {
