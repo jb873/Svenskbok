@@ -10,6 +10,7 @@
      1. Tokens och hero-banner   (🎨 ämneseget – signaturfärg)
      4. Disabled nivåknapp       (plattformsbeteende, avsnitt.js)
      7. Vinrött i stället för guld/blått (överskrivningslistan ärvd från kemi.css)
+     8. Öva-övningen (ordklass-ova.js, arbetsorder 02)
 
    LÅST: --accent #8c3448 (överlämningen).
    Kontrast (uppmätt): #8c3448 mot --paper 6.0:1, mot --paper-light 6.6:1 → duger
@@ -216,3 +217,170 @@
 .sida > .innehallsforteckning:first-child,
 .sida > .brodsmulor + .innehallsforteckning { margin-top: 0; }
 .innehallsforteckning + .kapitel-intro { margin-top: 3rem; }
+
+
+/* ---------- 8. Öva-övningen (js/ordklass-ova.js, arbetsorder 02) ----------
+   Egna klasser med prefix ordova- så att avsnitt.js (.flik, .underdel-*,
+   .niva-*) inte fångar övningens element. Uttrycken är lånade från
+   plattformen: versionsväljaren från .niva-valjare/.niva-knapp, textfälten
+   från .egen-fraga-input, primärknappen från .lagg-till-fraga-knapp,
+   sekundärknappen från .egen-fraga-ta-bort-knapp, stegrubriken från
+   .brodtext h2. Tabellen är plattformens .vintage-tabell.
+
+   Rätt/fel-färger = plattformens självskattning Kan / Kan ej
+   (geografi.css .skatt-knapp.farg-gron #4a6d2a, .farg-rod #b04a2a) med
+   flipcards ljusa fyllningar (.flip-skatt.vald-bra #e4ecdd, .vald-ova #f3e0d9).
+   Inga nya tokens (beslut Joachim 2026-09-16). */
+
+.ordova {
+  max-width: var(--las-bredd);
+  margin: 0 auto;
+}
+
+.ordova-laddfel {
+  font-style: italic;
+  color: var(--muted);
+}
+
+/* Versionsväljare */
+.ordova-valjare {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 0 auto 1.5rem;
+  width: fit-content;
+  max-width: 100%;
+  background: var(--paper-light);
+  border: 1px solid var(--accent-ram);
+  border-radius: 8px;
+  padding: 0.45rem 0.7rem;
+}
+.ordova-version {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+  background-color: transparent;
+  border: 1px solid rgba(27, 42, 54, 0.2);
+  border-radius: 3px;
+  padding: 0.45rem 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.ordova-version:hover { background-color: var(--accent-tint); }
+.ordova-version.aktiv {
+  background-color: var(--accent-text);
+  color: var(--paper);
+  border-color: var(--accent-text);
+}
+
+/* Steg */
+.ordova-steg + .ordova-steg { margin-top: 2.5rem; }
+.ordova-rubrik {
+  border-bottom: 1px solid var(--brass);
+  padding-bottom: 0.3rem;
+  margin: 0 0 0.5em;
+}
+.ordova-instruktion { margin: 0 0 1em; }
+
+/* Meningarna: orden är knappar som ser ut som löpande text */
+.ordova-meningar { margin: 0 0 1em; padding-left: 1.6em; }
+.ordova-meningar li { margin-bottom: 0.35em; }
+.ordova-ord {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  border-radius: 3px;
+  padding: 0 0.15em;
+  margin: 0 -0.15em;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.ordova-ord:hover { background-color: var(--accent-tint); }
+.ordova-ord:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.ordova-ord.hittad { color: #4a6d2a; background-color: #e4ecdd; }
+.ordova-ord.fel { color: #b04a2a; background-color: #f3e0d9; }
+
+/* Statusrad: meddelande + räknare */
+.ordova-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  min-height: 1.7em;
+}
+.ordova-meddelande { margin: 0; flex: 1 1 60%; }
+.ordova-raknare {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* Tabellen: kompaktare celler än brödtexttabellen, plats för fälten */
+.ordova-tabell .vintage-tabell thead th,
+.ordova-tabell .vintage-tabell tbody td { padding: 0.45em 0.6em; }
+.ordova-tabell .vintage-tabell thead th { font-size: 0.8rem; }
+.ordova-hittat { font-style: italic; }
+.ordova-exempel td { color: var(--muted); }
+.ordova-tom td { color: var(--muted); font-style: italic; text-align: center; }
+.ordova-falt {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 0.35rem 0.5rem;
+  background-color: var(--paper);
+  border: 1px solid rgba(27, 42, 54, 0.2);
+  border-radius: 3px;
+  color: var(--ink);
+}
+.ordova-falt:focus { outline: none; border-color: var(--accent-text); }
+.ordova-falt.ratt { border-color: #4a6d2a; background-color: #e4ecdd; }
+.ordova-falt.fel { border-color: #b04a2a; background-color: #f3e0d9; }
+.ordova-tips {
+  display: block;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  color: #b04a2a;
+  margin-top: 0.25em;
+}
+
+/* Knappar och resultat */
+.ordova-knappar {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-top: 0.5rem;
+}
+.ordova-ratta {
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  color: var(--paper);
+  background-color: var(--accent-text);
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+  padding: 0.5rem 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+.ordova-ratta:hover { background-color: var(--accent-hover); }
+.ordova-borja-om {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.ordova-borja-om:hover { color: var(--accent-text); }
+.ordova-resultat { margin: 0.8em 0 0; min-height: 1.7em; }
+.ordova-resultat.alla-ratt { color: #4a6d2a; }

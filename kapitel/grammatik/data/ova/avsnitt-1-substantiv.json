@@ -1,0 +1,609 @@
+{
+ "avsnitt": "a1_substantiv",
+ "ordklass": "substantiv",
+ "instruktion_steg1": "Klicka på alla substantiv i meningarna. Namn räknas också som substantiv.",
+ "instruktion_steg2": "Skriv substantivens alla fyra former. Ordet du hittade ska stå i rätt kolumn. Namn böjs inte och är därför inte med i tabellen.",
+ "rubrik_steg1": "Steg 1: Hitta",
+ "rubrik_steg2": "Steg 2: Böj",
+ "kolumn_hittat": "Ord i texten",
+ "kolumner": [
+  "Obestämd form singular",
+  "Bestämd form singular",
+  "Obestämd form plural",
+  "Bestämd form plural"
+ ],
+ "exempel": [
+  "hem",
+  "hemmet",
+  "hem",
+  "hemmen"
+ ],
+ "meddelanden": {
+  "ratt": "Rätt! {ord} är ett substantiv.",
+  "ratt_namn": "Rätt! {ord} är ett egennamn – det är också ett substantiv.",
+  "ratt_genitiv": "Rätt! {ord} står i genitiv (vems?). Skriv formerna utan -s i tabellen.",
+  "ratt_genitiv_namn": "Rätt! {ord} är ett egennamn i genitiv – det är också ett substantiv.",
+  "redan": "{ord} har du redan hittat.",
+  "fel": "{ord} är inte ett substantiv. Testa: kan du sätta en, ett, flera, den här eller det här framför ordet?"
+ },
+ "fel_sarskilda": {
+  "en": "En är en artikel. Den visar att ordet efter står i obestämd form.",
+  "ett": "Ett är en artikel. Den visar att ordet efter står i obestämd form.",
+  "vi": "Vi är ett pronomen – det står i stället för ett namn.",
+  "oss": "Oss är ett pronomen – det står i stället för ett namn.",
+  "dem": "Dem är ett pronomen – det står i stället för ett namn.",
+  "det": "Det är ett pronomen här.",
+  "min": "Min är ett pronomen – det visar vems.",
+  "sin": "Sin är ett pronomen – det visar vems.",
+  "många": "Många beskriver hur många – det är inte ett substantiv.",
+  "full": "Full är ett adjektiv – det beskriver hur trädgården är.",
+  "stark": "Stark är ett adjektiv – det beskriver hur vänskapen var."
+ },
+ "tips_tabell": {
+  "tom": "Tom ruta.",
+  "grundform_fel_kolumn": "Det här är grundformen. Vilken form ska stå här?"
+ },
+ "versioner": [
+  {
+   "sentences": [
+    "Lisa lade boken på hyllan.",
+    "Barnen byggde en koja i skogen.",
+    "Pappas telefon ringde under matchen.",
+    "Vi åt äpplen efter lektionen.",
+    "Hunden sprang efter bollen.",
+    "Min kompis fick en idé.",
+    "Filip åkte tåg till Göteborg.",
+    "Fåglarna sjöng i träden.",
+    "Läraren gav oss en uppgift.",
+    "Laget firade segern med tårta."
+   ],
+   "names": [
+    "lisa",
+    "filip",
+    "göteborg"
+   ],
+   "genitiv": {
+    "pappas": "pappa"
+   },
+   "lemmas": {
+    "bok": [
+     "bok",
+     "boken",
+     "böcker",
+     "böckerna"
+    ],
+    "hylla": [
+     "hylla",
+     "hyllan",
+     "hyllor",
+     "hyllorna"
+    ],
+    "barn": [
+     "barn",
+     "barnet",
+     "barn",
+     "barnen"
+    ],
+    "koja": [
+     "koja",
+     "kojan",
+     "kojor",
+     "kojorna"
+    ],
+    "skog": [
+     "skog",
+     "skogen",
+     "skogar",
+     "skogarna"
+    ],
+    "pappa": [
+     "pappa",
+     "pappan",
+     "pappor",
+     "papporna"
+    ],
+    "telefon": [
+     "telefon",
+     "telefonen",
+     "telefoner",
+     "telefonerna"
+    ],
+    "match": [
+     "match",
+     "matchen",
+     "matcher",
+     "matcherna"
+    ],
+    "äpple": [
+     "äpple",
+     "äpplet",
+     "äpplen",
+     "äpplena"
+    ],
+    "lektion": [
+     "lektion",
+     "lektionen",
+     "lektioner",
+     "lektionerna"
+    ],
+    "hund": [
+     "hund",
+     "hunden",
+     "hundar",
+     "hundarna"
+    ],
+    "boll": [
+     "boll",
+     "bollen",
+     "bollar",
+     "bollarna"
+    ],
+    "kompis": [
+     "kompis",
+     "kompisen",
+     "kompisar",
+     "kompisarna"
+    ],
+    "idé": [
+     "idé",
+     "idén",
+     "idéer",
+     "idéerna"
+    ],
+    "tåg": [
+     "tåg",
+     "tåget",
+     "tåg",
+     "tågen"
+    ],
+    "fågel": [
+     "fågel",
+     "fågeln",
+     "fåglar",
+     "fåglarna"
+    ],
+    "träd": [
+     "träd",
+     "trädet",
+     "träd",
+     "träden"
+    ],
+    "lärare": [
+     "lärare",
+     "läraren",
+     "lärare",
+     "lärarna"
+    ],
+    "uppgift": [
+     "uppgift",
+     "uppgiften",
+     "uppgifter",
+     "uppgifterna"
+    ],
+    "lag": [
+     "lag",
+     "laget",
+     "lag",
+     "lagen"
+    ],
+    "seger": [
+     "seger",
+     "segern",
+     "segrar",
+     "segrarna"
+    ],
+    "tårta": [
+     "tårta",
+     "tårtan",
+     "tårtor",
+     "tårtorna"
+    ]
+   },
+   "tokens": {
+    "boken": "bok",
+    "hyllan": "hylla",
+    "barnen": "barn",
+    "koja": "koja",
+    "skogen": "skog",
+    "telefon": "telefon",
+    "matchen": "match",
+    "äpplen": "äpple",
+    "lektionen": "lektion",
+    "hunden": "hund",
+    "bollen": "boll",
+    "kompis": "kompis",
+    "idé": "idé",
+    "tåg": "tåg",
+    "fåglarna": "fågel",
+    "träden": "träd",
+    "läraren": "lärare",
+    "uppgift": "uppgift",
+    "laget": "lag",
+    "segern": "seger",
+    "tårta": "tårta"
+   }
+  },
+  {
+   "sentences": [
+    "Omar hittade en nyckel i jackan.",
+    "Katten sov på soffan.",
+    "Mormors trädgård är full av blommor.",
+    "Eleverna skrev berättelser om drakar.",
+    "Vi såg stjärnor genom fönstret.",
+    "Ella lånade en penna av sin granne.",
+    "Bussen stannade vid torget.",
+    "Min bror spelar gitarr i ett band.",
+    "Lamporna i huset släcktes.",
+    "Stockholms museer har många besökare."
+   ],
+   "names": [
+    "omar",
+    "ella",
+    "stockholms"
+   ],
+   "genitiv": {
+    "mormors": "mormor",
+    "stockholms": null
+   },
+   "lemmas": {
+    "nyckel": [
+     "nyckel",
+     "nyckeln",
+     "nycklar",
+     "nycklarna"
+    ],
+    "jacka": [
+     "jacka",
+     "jackan",
+     "jackor",
+     "jackorna"
+    ],
+    "katt": [
+     "katt",
+     "katten",
+     "katter",
+     "katterna"
+    ],
+    "soffa": [
+     "soffa",
+     "soffan",
+     "soffor",
+     "sofforna"
+    ],
+    "mormor": [
+     "mormor",
+     [
+      "mormodern",
+      "mormorn"
+     ],
+     "mormödrar",
+     "mormödrarna"
+    ],
+    "trädgård": [
+     "trädgård",
+     "trädgården",
+     "trädgårdar",
+     "trädgårdarna"
+    ],
+    "blomma": [
+     "blomma",
+     "blomman",
+     "blommor",
+     "blommorna"
+    ],
+    "elev": [
+     "elev",
+     "eleven",
+     "elever",
+     "eleverna"
+    ],
+    "berättelse": [
+     "berättelse",
+     "berättelsen",
+     "berättelser",
+     "berättelserna"
+    ],
+    "drake": [
+     "drake",
+     "draken",
+     "drakar",
+     "drakarna"
+    ],
+    "stjärna": [
+     "stjärna",
+     "stjärnan",
+     "stjärnor",
+     "stjärnorna"
+    ],
+    "fönster": [
+     "fönster",
+     "fönstret",
+     "fönster",
+     "fönstren"
+    ],
+    "penna": [
+     "penna",
+     "pennan",
+     "pennor",
+     "pennorna"
+    ],
+    "granne": [
+     "granne",
+     "grannen",
+     "grannar",
+     "grannarna"
+    ],
+    "buss": [
+     "buss",
+     "bussen",
+     "bussar",
+     "bussarna"
+    ],
+    "torg": [
+     "torg",
+     "torget",
+     "torg",
+     "torgen"
+    ],
+    "bror": [
+     "bror",
+     [
+      "brodern",
+      "brorn"
+     ],
+     "bröder",
+     "bröderna"
+    ],
+    "gitarr": [
+     "gitarr",
+     "gitarren",
+     "gitarrer",
+     "gitarrerna"
+    ],
+    "band": [
+     "band",
+     "bandet",
+     "band",
+     "banden"
+    ],
+    "lampa": [
+     "lampa",
+     "lampan",
+     "lampor",
+     "lamporna"
+    ],
+    "hus": [
+     "hus",
+     "huset",
+     "hus",
+     "husen"
+    ],
+    "museum": [
+     "museum",
+     "museet",
+     "museer",
+     "museerna"
+    ],
+    "besökare": [
+     "besökare",
+     "besökaren",
+     "besökare",
+     "besökarna"
+    ]
+   },
+   "tokens": {
+    "nyckel": "nyckel",
+    "jackan": "jacka",
+    "katten": "katt",
+    "soffan": "soffa",
+    "trädgård": "trädgård",
+    "blommor": "blomma",
+    "eleverna": "elev",
+    "berättelser": "berättelse",
+    "drakar": "drake",
+    "stjärnor": "stjärna",
+    "fönstret": "fönster",
+    "penna": "penna",
+    "granne": "granne",
+    "bussen": "buss",
+    "torget": "torg",
+    "bror": "bror",
+    "gitarr": "gitarr",
+    "band": "band",
+    "lamporna": "lampa",
+    "huset": "hus",
+    "museer": "museum",
+    "besökare": "besökare"
+   }
+  },
+  {
+   "sentences": [
+    "Noah glömde sin mössa på stranden.",
+    "Farmors katt jagar möss i ladan.",
+    "Tjejerna tränar fotboll på planen.",
+    "Kocken skar lök och tomater.",
+    "Klassen åkte på utflykt till Visby.",
+    "Det finns många frimärken i albumet.",
+    "Wilma drömde om en häst.",
+    "Molnen seglade över bergen.",
+    "Doktorn gav patienten medicin.",
+    "Vänskapen mellan dem var stark."
+   ],
+   "names": [
+    "noah",
+    "visby",
+    "wilma"
+   ],
+   "genitiv": {
+    "farmors": "farmor"
+   },
+   "lemmas": {
+    "mössa": [
+     "mössa",
+     "mössan",
+     "mössor",
+     "mössorna"
+    ],
+    "strand": [
+     "strand",
+     "stranden",
+     "stränder",
+     "stränderna"
+    ],
+    "farmor": [
+     "farmor",
+     [
+      "farmodern",
+      "farmorn"
+     ],
+     "farmödrar",
+     "farmödrarna"
+    ],
+    "katt": [
+     "katt",
+     "katten",
+     "katter",
+     "katterna"
+    ],
+    "mus": [
+     "mus",
+     "musen",
+     "möss",
+     "mössen"
+    ],
+    "lada": [
+     "lada",
+     "ladan",
+     "lador",
+     "ladorna"
+    ],
+    "tjej": [
+     "tjej",
+     "tjejen",
+     "tjejer",
+     "tjejerna"
+    ],
+    "fotboll": [
+     "fotboll",
+     "fotbollen",
+     "fotbollar",
+     "fotbollarna"
+    ],
+    "plan": [
+     "plan",
+     "planen",
+     "planer",
+     "planerna"
+    ],
+    "kock": [
+     "kock",
+     "kocken",
+     "kockar",
+     "kockarna"
+    ],
+    "lök": [
+     "lök",
+     "löken",
+     "lökar",
+     "lökarna"
+    ],
+    "tomat": [
+     "tomat",
+     "tomaten",
+     "tomater",
+     "tomaterna"
+    ],
+    "klass": [
+     "klass",
+     "klassen",
+     "klasser",
+     "klasserna"
+    ],
+    "utflykt": [
+     "utflykt",
+     "utflykten",
+     "utflykter",
+     "utflykterna"
+    ],
+    "frimärke": [
+     "frimärke",
+     "frimärket",
+     "frimärken",
+     "frimärkena"
+    ],
+    "album": [
+     "album",
+     "albumet",
+     "album",
+     "albumen"
+    ],
+    "häst": [
+     "häst",
+     "hästen",
+     "hästar",
+     "hästarna"
+    ],
+    "moln": [
+     "moln",
+     "molnet",
+     "moln",
+     "molnen"
+    ],
+    "berg": [
+     "berg",
+     "berget",
+     "berg",
+     "bergen"
+    ],
+    "doktor": [
+     "doktor",
+     "doktorn",
+     "doktorer",
+     "doktorerna"
+    ],
+    "patient": [
+     "patient",
+     "patienten",
+     "patienter",
+     "patienterna"
+    ],
+    "medicin": [
+     "medicin",
+     "medicinen",
+     "mediciner",
+     "medicinerna"
+    ],
+    "vänskap": [
+     "vänskap",
+     "vänskapen",
+     "vänskaper",
+     "vänskaperna"
+    ]
+   },
+   "tokens": {
+    "mössa": "mössa",
+    "stranden": "strand",
+    "katt": "katt",
+    "möss": "mus",
+    "ladan": "lada",
+    "tjejerna": "tjej",
+    "fotboll": "fotboll",
+    "planen": "plan",
+    "kocken": "kock",
+    "lök": "lök",
+    "tomater": "tomat",
+    "klassen": "klass",
+    "utflykt": "utflykt",
+    "frimärken": "frimärke",
+    "albumet": "album",
+    "häst": "häst",
+    "molnen": "moln",
+    "bergen": "berg",
+    "doktorn": "doktor",
+    "patienten": "patient",
+    "medicin": "medicin",
+    "vänskapen": "vänskap"
+   }
+  }
+ ]
+}
