@@ -14,9 +14,12 @@
    LÅST: --accent #8c3448 (överlämningen).
    Kontrast (uppmätt): #8c3448 mot --paper 6.0:1, mot --paper-light 6.6:1 → duger
    som textfärg, därför --accent-text = --accent.
-   Mot mörk hero bara 2.4:1 → .avsnitt-label i heron behåller geografis mässing.
-   GODKÄNT (Joachim 2026-09-16): hero-gradient #1c1116 → #301c24 (mörk vinröd,
-   samma mönster som kemins mörka hero i egen färgfamilj).
+   STILREFERENS (Joachim 2026-09-16, beslutad stilbild): hero enfärgad varm svart
+   #17130d; etikett i vinrött; rubrik i EB Garamond där efterleden i sammansatta
+   titlar står kursiv i vinrött (<h1>Ord<em>klasser</em></h1>); brödsmulor UNDER
+   heron, i vinrött. Ersätter den tidigare vinröda hero-gradienten.
+   🔵 Känd avvägning: vinrött mot #17130d ≈ 2.4:1 (etikett och <em> i rubriken).
+   Följer stilbilden medvetet; tas upp separat.
    FÖRSLAG, ej beslutat: --accent-hover #6d2838.
    ============================================================ */
 
@@ -32,7 +35,46 @@
 }
 
 .hero-banner {
-  background: linear-gradient(180deg, #1c1116 0%, #301c24 100%);
+  background: #17130d;
+}
+
+.hero-banner .avsnitt-label {
+  color: var(--accent);
+  font-size: 13px;
+  letter-spacing: 0.3em;
+  margin-bottom: 10px;
+}
+
+.hero-banner h1 {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: clamp(36px, 3.6vw, 50px);
+  letter-spacing: 0.01em;
+}
+
+.hero-banner h1 em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+/* Brödsmulor under heron (stilbilden), vänsterställda, i vinrött. */
+.sida > .brodsmulor {
+  text-align: left;
+  margin: 1.6rem 0 1.4rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  padding-left: 0;
+}
+.sida > .brodsmulor a:not([class]),
+.sida > .brodsmulor .aktuell { color: var(--accent-text); text-decoration: none; }
+.sida > .brodsmulor a:not([class]):hover { text-decoration: underline; }
+.sida > .brodsmulor .skiljare { color: var(--accent-text); opacity: 0.6; }
+
+/* Länkar i brödtext: vinröd understrykning som i stilbilden. */
+.sida a:not([class]) {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 0.2em;
 }
 
 /* ---------- 4. Disabled nivåknapp ---------- */
@@ -171,5 +213,6 @@
 /* Kapitel-/delkapiteltext UNDER korten (Joachim 2026-09-16: eleven ska nå
    avsnitten utan att scrolla). kapitelstart.css förutsätter texten ÖVER
    listan, så luften sätts här. */
-.sida > .innehallsforteckning:first-child { margin-top: 2rem; }
+.sida > .innehallsforteckning:first-child,
+.sida > .brodsmulor + .innehallsforteckning { margin-top: 0; }
 .innehallsforteckning + .kapitel-intro { margin-top: 3rem; }
