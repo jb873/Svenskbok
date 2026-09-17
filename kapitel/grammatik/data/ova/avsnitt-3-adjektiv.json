@@ -1,0 +1,353 @@
+{
+ "avsnitt": "a3_adjektiv",
+ "ordklass": "adjektiv",
+ "instruktion_steg1": "Klicka på alla adjektiv i meningarna.",
+ "instruktion_steg2": "Komparera adjektiven. Skriv grundformen under Positiv, även om ordet står i en annan form i meningen.",
+ "rubrik_steg1": "Steg 1: Hitta",
+ "rubrik_steg2": "Steg 2: Komparera",
+ "kolumn_hittat": "Ord i texten",
+ "kolumner": [
+  "Positiv",
+  "Komparativ",
+  "Superlativ"
+ ],
+ "exempel": [
+  "snäll",
+  "snällare",
+  "snällast"
+ ],
+ "meddelanden": {
+  "ratt": "Rätt! {ord} är ett adjektiv.",
+  "ratt_namn": "Rätt! {ord} är ett adjektiv.",
+  "ratt_genitiv": "Rätt! {ord} är ett adjektiv.",
+  "ratt_genitiv_namn": "Rätt! {ord} är ett adjektiv.",
+  "redan": "{ord} har du redan hittat.",
+  "fel": "{ord} är inte ett adjektiv. Adjektiv beskriver hur något är – testa om ordet går att jämföra: mer eller mest?"
+ },
+ "fel_sarskilda": {
+  "mer": "Mer hör till adjektivet efter. Klicka på själva adjektivet.",
+  "mest": "Mest hör till adjektivet efter. Klicka på själva adjektivet.",
+  "än": "Än används när vi jämför, men det är inte ett adjektiv.",
+  "för": "För är ett adverb här – det säger hur mycket.",
+  "tidigt": "Tidigt är ett adverb här – det beskriver när eleven gick.",
+  "min": "Min är ett pronomen – det visar vems.",
+  "hans": "Hans är ett pronomen – det visar vems.",
+  "en": "En är en artikel.",
+  "ett": "Ett är en artikel.",
+  "den": "Den är en artikel här.",
+  "alla": "Alla är ett pronomen."
+ },
+ "tips_tabell": {
+  "tom": "Tom ruta.",
+  "grundform_fel_kolumn": "Det här är positiv. Vilken form ska stå här?",
+  "positiv_grundform": "Skriv grundformen."
+ },
+ "versioner": [
+  {
+   "sentences": [
+    "Vi bor i ett rött hus vid sjön.",
+    "Min lillasyster är gladast i hela familjen.",
+    "Den nya cykeln var dyrare än den gamla.",
+    "Filmen var mer spännande än boken.",
+    "Det var årets varmaste dag.",
+    "Hon har en bättre idé.",
+    "Ett litet barn sov i vagnen.",
+    "De höga träden svajade i vinden.",
+    "Maten var sämre i dag.",
+    "Den tröttaste eleven gick hem tidigt."
+   ],
+   "names": [],
+   "genitiv": {},
+   "tokens": {
+    "rött": "röd",
+    "gladast": "glad",
+    "nya": "ny",
+    "dyrare": "dyr",
+    "gamla": "gammal",
+    "spännande": "spännande",
+    "varmaste": "varm",
+    "bättre": "bra",
+    "litet": "liten",
+    "höga": "hög",
+    "sämre": "dålig",
+    "tröttaste": "trött"
+   },
+   "lemmas": {
+    "röd": [
+     "röd",
+     "rödare",
+     "rödast"
+    ],
+    "glad": [
+     "glad",
+     "gladare",
+     "gladast"
+    ],
+    "ny": [
+     "ny",
+     "nyare",
+     "nyast"
+    ],
+    "dyr": [
+     "dyr",
+     "dyrare",
+     "dyrast"
+    ],
+    "gammal": [
+     "gammal",
+     "äldre",
+     "äldst"
+    ],
+    "spännande": [
+     "spännande",
+     "mer spännande",
+     "mest spännande"
+    ],
+    "varm": [
+     "varm",
+     "varmare",
+     "varmast"
+    ],
+    "bra": [
+     "bra",
+     "bättre",
+     "bäst"
+    ],
+    "liten": [
+     "liten",
+     "mindre",
+     "minst"
+    ],
+    "hög": [
+     "hög",
+     "högre",
+     "högst"
+    ],
+    "dålig": [
+     "dålig",
+     [
+      "sämre",
+      "dåligare"
+     ],
+     [
+      "sämst",
+      "dåligast"
+     ]
+    ],
+    "trött": [
+     "trött",
+     "tröttare",
+     "tröttast"
+    ]
+   }
+  },
+  {
+   "sentences": [
+    "Jag köpte en blå tröja.",
+    "Det nya tåget är snabbare än bussen.",
+    "Min morfar är äldst av alla i byn.",
+    "Hon valde den minsta valpen.",
+    "Vi såg en rolig film i går.",
+    "Glassen blev bäst med jordgubbar.",
+    "Det här är den mest intressanta boken.",
+    "Gatorna var tomma och mörka.",
+    "Ett högre staket byggdes runt trädgården.",
+    "Den kallaste vintern kom i fjol."
+   ],
+   "names": [],
+   "genitiv": {},
+   "tokens": {
+    "blå": "blå",
+    "nya": "ny",
+    "snabbare": "snabb",
+    "äldst": "gammal",
+    "minsta": "liten",
+    "rolig": "rolig",
+    "bäst": "bra",
+    "intressanta": "intressant",
+    "tomma": "tom",
+    "mörka": "mörk",
+    "högre": "hög",
+    "kallaste": "kall"
+   },
+   "lemmas": {
+    "blå": [
+     "blå",
+     "blåare",
+     "blåast"
+    ],
+    "ny": [
+     "ny",
+     "nyare",
+     "nyast"
+    ],
+    "snabb": [
+     "snabb",
+     "snabbare",
+     "snabbast"
+    ],
+    "gammal": [
+     "gammal",
+     "äldre",
+     "äldst"
+    ],
+    "liten": [
+     "liten",
+     "mindre",
+     "minst"
+    ],
+    "rolig": [
+     "rolig",
+     "roligare",
+     "roligast"
+    ],
+    "bra": [
+     "bra",
+     "bättre",
+     "bäst"
+    ],
+    "intressant": [
+     "intressant",
+     [
+      "intressantare",
+      "mer intressant"
+     ],
+     [
+      "intressantast",
+      "mest intressant"
+     ]
+    ],
+    "tom": [
+     "tom",
+     "tommare",
+     "tommast"
+    ],
+    "mörk": [
+     "mörk",
+     "mörkare",
+     "mörkast"
+    ],
+    "hög": [
+     "hög",
+     "högre",
+     "högst"
+    ],
+    "kall": [
+     "kall",
+     "kallare",
+     "kallast"
+    ]
+   }
+  },
+  {
+   "sentences": [
+    "Kaffet var för starkt.",
+    "Min bror är längre än min pappa.",
+    "Vi åt den godaste tårtan.",
+    "En ung katt klättrade upp i trädet.",
+    "Det var en sämre match än i söndags.",
+    "Hans nya jacka är grön.",
+    "Hon är den mest kända artisten i Sverige.",
+    "Stora vågor slog mot stranden.",
+    "Det bästa med sommaren är lovet.",
+    "Ett tyst rum är lättare att plugga i."
+   ],
+   "names": [],
+   "genitiv": {},
+   "tokens": {
+    "starkt": "stark",
+    "längre": "lång",
+    "godaste": "god",
+    "ung": "ung",
+    "sämre": "dålig",
+    "nya": "ny",
+    "grön": "grön",
+    "kända": "känd",
+    "stora": "stor",
+    "bästa": "bra",
+    "tyst": "tyst",
+    "lättare": "lätt"
+   },
+   "lemmas": {
+    "stark": [
+     "stark",
+     "starkare",
+     "starkast"
+    ],
+    "lång": [
+     "lång",
+     "längre",
+     "längst"
+    ],
+    "god": [
+     "god",
+     [
+      "godare",
+      "bättre"
+     ],
+     [
+      "godast",
+      "bäst"
+     ]
+    ],
+    "ung": [
+     "ung",
+     "yngre",
+     "yngst"
+    ],
+    "dålig": [
+     "dålig",
+     [
+      "sämre",
+      "dåligare"
+     ],
+     [
+      "sämst",
+      "dåligast"
+     ]
+    ],
+    "ny": [
+     "ny",
+     "nyare",
+     "nyast"
+    ],
+    "grön": [
+     "grön",
+     "grönare",
+     "grönast"
+    ],
+    "känd": [
+     "känd",
+     [
+      "kändare",
+      "mer känd"
+     ],
+     [
+      "kändast",
+      "mest känd"
+     ]
+    ],
+    "stor": [
+     "stor",
+     "större",
+     "störst"
+    ],
+    "bra": [
+     "bra",
+     "bättre",
+     "bäst"
+    ],
+    "tyst": [
+     "tyst",
+     "tystare",
+     "tystast"
+    ],
+    "lätt": [
+     "lätt",
+     "lättare",
+     "lättast"
+    ]
+   }
+  }
+ ]
+}
