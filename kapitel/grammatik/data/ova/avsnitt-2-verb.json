@@ -1,0 +1,408 @@
+{
+ "avsnitt": "a2_verb",
+ "ordklass": "verb",
+ "instruktion_steg1": "Klicka på alla verb i meningarna. Glöm inte hjälpverben!",
+ "instruktion_steg2": "Skriv verbens alla fyra former. Samma verb står bara en gång i tabellen.",
+ "rubrik_steg1": "Steg 1: Hitta",
+ "rubrik_steg2": "Steg 2: Böj",
+ "kolumn_hittat": "Ord i texten",
+ "kolumner": [
+  "Infinitiv",
+  "Presens",
+  "Preteritum",
+  "Supinum"
+ ],
+ "exempel": [
+  "gå",
+  "går",
+  "gick",
+  "gått"
+ ],
+ "meddelanden": {
+  "ratt": "Rätt! {ord} är ett verb.",
+  "ratt_namn": "Rätt! {ord} är ett verb.",
+  "ratt_genitiv": "Rätt! {ord} är ett verb.",
+  "ratt_genitiv_namn": "Rätt! {ord} är ett verb.",
+  "redan": "{ord} har du redan hittat.",
+  "fel": "{ord} är inte ett verb. Testa: kan du sätta att framför, eller byta tid på ordet?"
+ },
+ "fel_sarskilda": {
+  "att": "Att är ett infinitivmärke. Klicka på verbet efter.",
+  "ut": "Ut hör till verbet framför. Klicka på själva verbet.",
+  "upp": "Upp hör till verbet framför. Klicka på själva verbet.",
+  "på": "På är en preposition här.",
+  "en": "En är en artikel.",
+  "ett": "Ett är en artikel.",
+  "fort": "Fort är ett adverb – det beskriver hur han växer.",
+  "länge": "Länge är ett adverb – det beskriver hur länge de diskuterade.",
+  "redan": "Redan är ett adverb.",
+  "hit": "Hit är ett adverb – det svarar på frågan vart?"
+ },
+ "tips_tabell": {
+  "tom": "Tom ruta.",
+  "grundform_fel_kolumn": "Det här är infinitiv. Vilken form ska stå här?"
+ },
+ "versioner": [
+  {
+   "sentences": [
+    "Ida läser en bok varje kväll.",
+    "Vi väntade på bussen i regnet.",
+    "Morfar har byggt en båt.",
+    "Katten sov hela dagen.",
+    "Jag kan simma under vattnet.",
+    "Barnen skrattade och sprang ut.",
+    "Hon hade glömt sina nycklar.",
+    "Min syster bor i Umeå.",
+    "Vi ringde till farmor i går.",
+    "Stäng fönstret, det blåser!"
+   ],
+   "names": [],
+   "genitiv": {},
+   "tokens": {
+    "läser": "läsa",
+    "väntade": "vänta",
+    "har": "ha",
+    "byggt": "bygga",
+    "sov": "sova",
+    "kan": "kunna",
+    "simma": "simma",
+    "skrattade": "skratta",
+    "sprang": "springa",
+    "hade": "ha",
+    "glömt": "glömma",
+    "bor": "bo",
+    "ringde": "ringa",
+    "stäng": "stänga",
+    "blåser": "blåsa"
+   },
+   "lemmas": {
+    "läsa": [
+     "läsa",
+     "läser",
+     "läste",
+     "läst"
+    ],
+    "vänta": [
+     "vänta",
+     "väntar",
+     "väntade",
+     "väntat"
+    ],
+    "ha": [
+     "ha",
+     "har",
+     "hade",
+     "haft"
+    ],
+    "bygga": [
+     "bygga",
+     "bygger",
+     "byggde",
+     "byggt"
+    ],
+    "sova": [
+     "sova",
+     "sover",
+     "sov",
+     "sovit"
+    ],
+    "kunna": [
+     "kunna",
+     "kan",
+     "kunde",
+     "kunnat"
+    ],
+    "simma": [
+     "simma",
+     "simmar",
+     "simmade",
+     "simmat"
+    ],
+    "skratta": [
+     "skratta",
+     "skrattar",
+     "skrattade",
+     "skrattat"
+    ],
+    "springa": [
+     "springa",
+     "springer",
+     "sprang",
+     "sprungit"
+    ],
+    "glömma": [
+     "glömma",
+     "glömmer",
+     "glömde",
+     "glömt"
+    ],
+    "bo": [
+     "bo",
+     "bor",
+     "bodde",
+     "bott"
+    ],
+    "ringa": [
+     "ringa",
+     "ringer",
+     "ringde",
+     "ringt"
+    ],
+    "stänga": [
+     "stänga",
+     "stänger",
+     "stängde",
+     "stängt"
+    ],
+    "blåsa": [
+     "blåsa",
+     "blåser",
+     "blåste",
+     "blåst"
+    ]
+   }
+  },
+  {
+   "sentences": [
+    "Elias skriver ett brev till sin kusin.",
+    "Mamma lagade mat medan vi dukade.",
+    "Tåget har redan åkt.",
+    "Vi åt glass på stranden.",
+    "Hunden vill leka i snön.",
+    "Linnea hjälpte sin bror med läxan.",
+    "De hade tränat i två timmar.",
+    "Vinden fick träden att svaja.",
+    "Jag tror att det snöar i morgon.",
+    "Skriv ditt namn på papperet!"
+   ],
+   "names": [],
+   "genitiv": {},
+   "tokens": {
+    "skriver": "skriva",
+    "lagade": "laga",
+    "dukade": "duka",
+    "har": "ha",
+    "åkt": "åka",
+    "åt": "äta",
+    "vill": "vilja",
+    "leka": "leka",
+    "hjälpte": "hjälpa",
+    "hade": "ha",
+    "tränat": "träna",
+    "fick": "få",
+    "svaja": "svaja",
+    "tror": "tro",
+    "snöar": "snöa",
+    "skriv": "skriva"
+   },
+   "lemmas": {
+    "skriva": [
+     "skriva",
+     "skriver",
+     "skrev",
+     "skrivit"
+    ],
+    "laga": [
+     "laga",
+     "lagar",
+     "lagade",
+     "lagat"
+    ],
+    "duka": [
+     "duka",
+     "dukar",
+     "dukade",
+     "dukat"
+    ],
+    "ha": [
+     "ha",
+     "har",
+     "hade",
+     "haft"
+    ],
+    "åka": [
+     "åka",
+     "åker",
+     "åkte",
+     "åkt"
+    ],
+    "äta": [
+     "äta",
+     "äter",
+     "åt",
+     "ätit"
+    ],
+    "vilja": [
+     "vilja",
+     "vill",
+     "ville",
+     "velat"
+    ],
+    "leka": [
+     "leka",
+     "leker",
+     "lekte",
+     "lekt"
+    ],
+    "hjälpa": [
+     "hjälpa",
+     "hjälper",
+     "hjälpte",
+     "hjälpt"
+    ],
+    "träna": [
+     "träna",
+     "tränar",
+     "tränade",
+     "tränat"
+    ],
+    "få": [
+     "få",
+     "får",
+     "fick",
+     "fått"
+    ],
+    "svaja": [
+     "svaja",
+     "svajar",
+     "svajade",
+     "svajat"
+    ],
+    "tro": [
+     "tro",
+     "tror",
+     "trodde",
+     "trott"
+    ],
+    "snöa": [
+     "snöa",
+     "snöar",
+     "snöade",
+     "snöat"
+    ]
+   }
+  },
+  {
+   "sentences": [
+    "Farfar dricker kaffe varje morgon.",
+    "Eleverna diskuterade boken länge.",
+    "Någon har ätit upp kakan.",
+    "Vi flyttade till Luleå förra året.",
+    "Sara kan spela piano.",
+    "Solen sken och fåglarna sjöng.",
+    "Han hade köpt biljetter till konserten.",
+    "Min lillebror växer fort.",
+    "Jag somnade framför teven.",
+    "Kom hit och titta!"
+   ],
+   "names": [],
+   "genitiv": {},
+   "tokens": {
+    "dricker": "dricka",
+    "diskuterade": "diskutera",
+    "har": "ha",
+    "ätit": "äta",
+    "flyttade": "flytta",
+    "kan": "kunna",
+    "spela": "spela",
+    "sken": "skina",
+    "sjöng": "sjunga",
+    "hade": "ha",
+    "köpt": "köpa",
+    "växer": "växa",
+    "somnade": "somna",
+    "kom": "komma",
+    "titta": "titta"
+   },
+   "lemmas": {
+    "dricka": [
+     "dricka",
+     "dricker",
+     "drack",
+     "druckit"
+    ],
+    "diskutera": [
+     "diskutera",
+     "diskuterar",
+     "diskuterade",
+     "diskuterat"
+    ],
+    "ha": [
+     "ha",
+     "har",
+     "hade",
+     "haft"
+    ],
+    "äta": [
+     "äta",
+     "äter",
+     "åt",
+     "ätit"
+    ],
+    "flytta": [
+     "flytta",
+     "flyttar",
+     "flyttade",
+     "flyttat"
+    ],
+    "kunna": [
+     "kunna",
+     "kan",
+     "kunde",
+     "kunnat"
+    ],
+    "spela": [
+     "spela",
+     "spelar",
+     "spelade",
+     "spelat"
+    ],
+    "skina": [
+     "skina",
+     "skiner",
+     "sken",
+     "skinit"
+    ],
+    "sjunga": [
+     "sjunga",
+     "sjunger",
+     "sjöng",
+     "sjungit"
+    ],
+    "köpa": [
+     "köpa",
+     "köper",
+     "köpte",
+     "köpt"
+    ],
+    "växa": [
+     "växa",
+     "växer",
+     "växte",
+     [
+      "vuxit",
+      "växt"
+     ]
+    ],
+    "somna": [
+     "somna",
+     "somnar",
+     "somnade",
+     "somnat"
+    ],
+    "komma": [
+     "komma",
+     "kommer",
+     "kom",
+     "kommit"
+    ],
+    "titta": [
+     "titta",
+     "tittar",
+     "tittade",
+     "tittat"
+    ]
+   }
+  }
+ ]
+}
