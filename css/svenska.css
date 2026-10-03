@@ -2,14 +2,13 @@
    Svenska – bok-override (accentfärger)
    ============================================================
 
-   Läses in EFTER css/geografi.css på alla Svenska-sidor. Samma arkitektur
-   som kemi.css/historia.css: accenterna ligger på BOK-nivå; inga bas-tokens
-   (--brass, --blood …) ersätts.
+   Läses in EFTER css/geografi.css på alla Svenska-sidor. Plattformens arkitektur:
+   bokens accenter ligger på BOK-nivå; inga bas-tokens (--brass, --blood …) ersätts.
 
    Innehåll:
      1. Tokens och hero-banner   (🎨 ämneseget – signaturfärg)
      4. Disabled nivåknapp       (plattformsbeteende, avsnitt.js)
-     7. Vinrött i stället för guld/blått (överskrivningslistan ärvd från kemi.css)
+     7. Vinrött i stället för guld/blått (överskrivningar av geografi.css)
      8. Öva-övningen (ordklass-ova.js, arbetsorder 02)
 
    LÅST: --accent #8c3448 (överlämningen).
@@ -89,14 +88,14 @@
 }
 
 
-/* ---------- 7. Vinrött i stället för guld/blått (ärvd lista från kemi.css) ----------
+/* ---------- 7. Vinrött i stället för guld/blått ----------
    Allt här är ÖVERSKRIVNINGAR av regler i geografi.css och flipcards.css.
    geografi.css förblir orörd (byte-identisk med plattformen utom @import-raden).
    Princip: det eleven klickar på och orienterar sig efter bär bokens färg;
    papperstexturen (etiketter, ornament, tabeller, hero-brödsmulor) förblir
    vintageatlas-guld. Fyllda ytor använder --accent-text (kontrast mot paper-text),
    ramar/linjer --accent, tint --accent-tint.
-   flipcards.css laddas EFTER kemi.css i scaffolden → flipcards-reglerna nedan har
+   flipcards.css kan laddas EFTER svenska.css → flipcards-reglerna nedan har
    höjd specificitet (.flipcards …) så att de vinner oavsett laddningsordning. */
 
 /* Nivåväljare */
@@ -157,8 +156,8 @@
      <p class="kap-beskrivning">…</p>
    geografi.css sätter aldrig display, så med <span class="kap-beskrivning">
    (Historias root- och delkapitel-index) flyter titel och beskrivning ihop
-   till en mening. Kemi ska få sex kapitel till som skrivs av från befintliga
-   sidor – regeln finns för att <span>-formen inte ska kunna smyga sig in igen.
+   till en mening. Nya sidor skrivs av från befintliga – regeln finns för att
+   <span>-formen inte ska kunna smyga sig in igen.
    Den döljer inget: markupen ska ändå vara <p>. */
 .kapitel-kort .kap-titel,
 .kapitel-kort .kap-beskrivning { display: block; }

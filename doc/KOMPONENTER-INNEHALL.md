@@ -1,42 +1,47 @@
-# Komponenter — HTML-strukturer för innehållsproducenter (KEMI)
+# Komponenter — HTML-strukturer för innehållsproducenter (SVENSKA)
 
 > Kanonisk dokumentation av återanvändbara HTML-komponenter och
-> avsnittsmallar i Alphaskolans lärplattform — Kemibokens version.
+> avsnittsmallar i Alphaskolans lärplattform — Svenskbokens version.
 > Bilaga till `LEVERANSGUIDE-INNEHALL.md`.
 >
 > Innehållssessioner ser inte CSS — bara HTML. För att producera
 > fungerande markup måste de exakta klassnamnen vara dokumenterade.
 
-**Senast uppdaterad:** 2026-09-15 (v1.5)
-**Version:** 1.5 (Kemi)
+**Senast uppdaterad:** 2026-10-03 (v1.0 Svenska)
+**Version:** 1.0 (Svenska)
 **DELAD-BAS:** v1.4 — måste matcha över alla ämnen
 **Ärvd från:** KOMPONENTER-INNEHALL-GEOGRAFI v1.6
 **Källa för alla mallar:** Geografis v1.6 (DOM-verifierad hero-banner) + Historias mappstruktur
 
 ---
 
-## LÄS DETTA FÖRST — vad som är nytt i kemi
+## LÄS DETTA FÖRST — vad som är nytt i svenska
 
-Kemi ärver hela den delade basen. Sex saker skiljer, och alla är dokumenterade nedan:
+Svenska ärver hela den delade basen. Fem saker skiljer, och alla är dokumenterade nedan:
 
-1. **Mappstruktur** — kemi använder historias fyra-nivåers djup, inte geografis platta (DEL 0)
-2. **Signaturfärg** — varm patina `#5a9668` (DEL 1)
-3. **Formelrendering** — MathJax + mhchem, tredelad notation (DEL 8)
-4. **Bild i fördjupning** — tillåten i kemi, till skillnad från övriga ämnen (DEL 3)
-5. **Färgkonvention för atomer** — CPK-grund, genom hela boken (DEL 9)
-6. **Faktaruta** — ny komponent, ej ärvd, kräver bygge (DEL 4.6)
+1. **Mappstruktur** — svenska använder historias fyra-nivåers djup, inte geografis platta (DEL 0)
+2. **Signaturfärg** — dämpad vintage-vin `#8c3448` (DEL 1)
+3. **En textnivå** — svenska har inga nivåer och ingen nivåväljare (DEL 1, DEL 2)
+4. **Brödsmulor under heron** — inte i hero-bannern som i övriga ämnen (DEL 1)
+5. **Öva-fliken** — en egen ordklassövning (`js/ordklass-ova.js`), inte flipcards (DEL 8)
 
 Allt annat ärvs oförändrat. **Uppfinn inte om det som redan finns.**
 
-### Skillnad mot geografis dokument — en scaffold, inte två
+### Svenska har en scaffold
 
 Geografis v1.6 innehåller två motstridiga scaffolds: DEL 1:s "kompletta scaffold-mall"
 (ljus header, `<div class="sida">`, brödsmulor i sidan) och DEL 4.5 (hero-banner,
 `<main class="sida">`, brödsmulor i headern). v1.6-noten erkänner att den första är
 inaktuell men lämnar kvar koden.
 
-**Kemi har en scaffold.** Den ljusa header-varianten existerar inte i detta dokument
+**Svenska har en scaffold.** Den ljusa header-varianten existerar inte i detta dokument
 och ska inte produceras. Finns tvekan — det som står i DEL 1 här är facit.
+
+> **Dokumentets ursprung.** Svenskboken startade som en kopia av Kemiboken, och det här
+> dokumentet var länge Kemibokens text med svenskans namn på. Kemispåren rensades
+> 2026-10-03; kvar står svenskans egna beslut plus den **delade** basen, som är ordagrant
+> densamma i alla ämnen. Kopieringen är i sig det A1 varnar för (DEL 6) — den delade basen
+> ska synkas, aldrig kopieras.
 
 ---
 
@@ -59,30 +64,23 @@ känner igen *ämnet*).
 | DEL 0 — Placering och sökvägar | 🎨 ÄMNESEGET |
 | Princip / Dokumentationsprincip | 🔗 DELAD |
 | DEL 1 — Scaffold: hero-banner (struktur) | 🔗 DELAD |
-| DEL 1 — Scaffold: signaturfärg (patina) | 🎨 ÄMNESEGET |
+| DEL 1 — Scaffold: signaturfärg, brödsmulornas plats, en nivå | 🎨 ÄMNESEGET |
 | DEL 1 — Scaffold: flikrad och nedåt | 🔗 DELAD |
-| DEL 2 — Brödtext-principer per nivå | 🔗 DELAD |
-| DEL 2.4 — Kemins fördjupningsnivå | 🎨 ÄMNESEGET |
-| DEL 3 — Bildstöd: Enkel + Standard | 🔗 DELAD |
-| DEL 3.4 — Bildstöd: Fördjupning | 🎨 ÄMNESEGET |
+| DEL 2 — Brödtext-principer per nivå | 🔗 DELAD (svenska använder en nivå) |
+| DEL 3 — Bildstöd: Enkel + Standard | 🔗 DELAD (svenska har inga bilder ännu) |
 | DEL 4.1–4.4 — fordj-kort, brodtext-bild, karnpunkter, bildguide | 🔗 DELAD |
 | DEL 4.5 — hero-banner | 🔗 struktur / 🎨 färg |
-| DEL 4.6 — faktaruta | 🎨 ÄMNESEGET (ny, ej byggd) |
 | DEL 5 — Ej dokumenterade (boklokal lista) | 🎨 ÄMNESEGET |
-| DEL 6 — Process | 🔗 DELAD |
-| DEL 6 — Verifieringsregler (V1–V14, A1) | 🔗 DELAD |
+| DEL 6 — Process och verifieringsregler | 🔗 DELAD |
 | DEL 7 — Föreläsning | 🔗 DELAD |
-| DEL 8 — Formler och notation | 🎨 ÄMNESEGET |
-| DEL 9 — Färgkonvention för bilder | 🎨 ÄMNESEGET |
-| DEL 10 — Öva-fliken och flipcards | 🔗 struktur / 🎨 korttyper |
-| DEL 11 — Arbetsmodell och leveransflöde | 🎨 ÄMNESEGET |
+| DEL 8 — Öva-fliken: ordklassövningen | 🎨 ÄMNESEGET |
+| DEL 9 — Arbetsmodell och leveransflöde | 🎨 ÄMNESEGET |
+| DEL 10 — Framtida: klickbara begreppsord | 🔗 plattformsfråga |
 | Bilagor / Revisionshistorik | 🎨 boklokal |
 
 **Ändring mot geografi:** DEL 3 var tidigare 🔗 DELAD i sin helhet. Den är nu **splittrad** —
-Enkel och Standard förblir delade, fördjupningsnivåns bildregel blir ämnesegen.
-DELAD-BAS är **oförändrad (v1.1)**: ingen delad komponent har ändrats, bara sektionens
-räckvidd. Motsvarande rad ska läggas in i geografis och historias dokument så att
-divergensen är dokumenterad och ingen "rättar" tillbaka kemi.
+Enkel och Standard förblir delade, fördjupningsnivåns bildregel är ämnesegen. DELAD-BAS är
+**oförändrad (v1.4)**: ingen delad komponent har ändrats, bara sektionens räckvidd.
 
 ---
 
@@ -107,27 +105,48 @@ Verifieringskrav: HTML + CSS + renderad sida måste stämma innan dokumentation 
 
 ---
 
+
+---
+
 ## DEL 0 — Placering och sökvägar
 **🎨 ÄMNESEGET**
 
 ### Mappstruktur
 
-Kemi använder **historias fyra-nivåers djup**:
+Svenska använder **historias fyra-nivåers djup**:
 
 ```
-kapitel/{område}/delkapitel/{delområde}/avsnitt-{n}-{slug}.html
+kapitel/{kapitel}/delkapitel/{delkapitel}/avsnitt-{n}-{slug}.html
 ```
 
-Mappnamnen är bokstavligen `kapitel/` och `delkapitel/` — **samma ord som i historia och
-geografi**, så att eleven känner igen sig mellan ämnen. I kemins innehåll motsvarar de
-*område* och *delområde*, men det är en läraretikett, inte ett mappnamn.
+Så ser det ut i dag:
+
+```
+kapitel/grammatik/
+├── index.html                                   Kapitel: Grammatik
+├── data/ova/                                    Övningsdata (DEL 8)
+│   ├── avsnitt-1-substantiv.json
+│   └── blandad-ordklasser.json
+└── delkapitel/
+    ├── ordklasser/
+    │   ├── index.html                           Delkapitel: 10 avsnittskort
+    │   ├── avsnitt-1-substantiv.html … avsnitt-10-rakneord.html
+    │   └── blandad-ovning.html                  Delkapitlets egen övningssida
+    └── satsdelar/
+        ├── index.html                           Delkapitel: 6 avsnittskort
+        └── avsnitt-1-subjekt.html … avsnitt-6-attribut.html
+```
+
+**Strukturens namn i svenska:** Grammatik är **kapitel**, Ordklasser och Satsdelar är
+**delkapitel**, varje ordklass och varje satsdel är ett **avsnitt**, och avsnittets delar är
+**underdelar A–F**. Mappnamnen är bokstavligen `kapitel/` och `delkapitel/` — samma ord som i
+historia och geografi, så att eleven känner igen sig mellan ämnen.
 
 ### Varför fyra nivåer överallt
 
-Kemins fyra områden är olika stora. Materia kommer att svälla; andra områden ryms på ett
-plan. **Djupet är ändå enhetligt för alla fyra.** Får djupet variera per område måste Code
-avgöra vilket djup som gäller var, och då uppstår tolkningsutrymme. Ett litet område får
-hellre ett enda delkapitel än att kemi har två filformer.
+Grammatik ryms i dag på ett plan, men djupet är ändå enhetligt. Får djupet variera per kapitel
+måste Code avgöra vilket djup som gäller var, och då uppstår tolkningsutrymme. Ett litet
+kapitel får hellre ett enda delkapitel än att svenska har två filformer.
 
 Priset är en pro forma-nivå i början. Vinsten är att sökvägen är identisk i varenda fil
 från fil ett, och att svällning inte kräver flytt av filer.
@@ -136,73 +155,104 @@ från fil ett, och att svällning inte kräver flytt av filer.
 
 | Vad | Djup | Exempel |
 |---|---|---|
-| CSS + JS | **fyra nivåer upp** | `../../../../css/kemi.css` |
-| Data-filer | **två nivåer upp** | `../../data/forelasningar.json` |
+| CSS + JS | **fyra nivåer upp** | `../../../../css/svenska.css` |
+| Data-filer | **två nivåer upp** | `../../data/ova/avsnitt-1-substantiv.json` |
 
 > ⚠️ **Den vanligaste förväxlingen.** Geografis DEL 4.5-mall är skriven med `../../`
-> eftersom geografi är platt. Klistras den in rakt av i kemis fyra-nivåers struktur bryts
+> eftersom geografi är platt. Klistras den in rakt av i svenskans fyra-nivåers struktur bryts
 > alla CSS- och script-länkar. Felet ser ut som *"sidan renderar ostylad"* — inte som ett
-> sökvägsfel. Använd alltid kemins egen scaffold i DEL 1.
+> sökvägsfel. Använd alltid svenskans egen scaffold i DEL 1.
 
-**Att bekräfta av Code vid JSON-fasen:** exakt sökväg till flipcards-data. Historias mönster
-lägger `data/` på kapitel-nivån (`kapitel/{kapitel}/data/`), vilket ger `../../data/` från
-avsnittsfilen. Bekräfta mot faktisk struktur innan JSON produceras.
+Övningsdata ligger på **kapitel-nivån** (`kapitel/{kapitel}/data/ova/`), vilket ger
+`../../data/ova/` från avsnittsfilen. Verifierat i drift.
 
 ### Brödsmulor
 
-Fyra nivåer: **Kemi › Område › Delområde › Avsnitt**. Aktuell crumb visar nummerprefix:
-`{{N}}. {{Avsnittstitel}}`.
+Fyra nivåer: **Svenska › Kapitel › Delkapitel › Avsnitt**. Aktuell crumb visar nummerprefix:
+`{{N}}. {{Avsnittstitel}}`. **I svenska ligger brödsmulorna först i `.sida`, inte i
+hero-bannern** (DEL 1).
 
 ---
 
 ## DEL 1 — Avsnitts-scaffold (kanonisk)
-**🔀 BLANDAD** — header-regionens färg är 🎨 ämneseget; struktur och allt från flikraden
-och nedåt är 🔗 delat.
+**🔀 BLANDAD** — header-regionens färg, brödsmulornas plats och antalet textnivåer är
+🎨 ämnesegna; struktur och allt från flikraden och nedåt är 🔗 delat.
 
-> Detta är **facit** för flik-/underdels-/nivå-strukturen på en avsnittssida.
+> Detta är **facit** för flik- och underdels-strukturen på en avsnittssida.
 > Klipp och fyll i.
 
 ### Signaturfärg
 **🎨 ÄMNESEGET**
 
-**Varm patina `#5a9668`** — grönt med kopparvärme i botten. Läser som kemi/natur/kretslopp,
-lyser mot mörk hero, bryter rent mot historias guld och geografins blå.
+**Dämpad vintage-vin `#8c3448`** — rödvinston med bruten mättnad. Läser som språk och
+litteratur, och bryter rent mot historias guld och geografins blå.
 
-**Detta är kemins enda ämnesegna färg.** Allt annat formspråk (typsnitt, komponenter,
-layout, `as-`-prefix) är 🔗 DELAT och ärvs oförändrat. **Code väljer aldrig färg.**
+**Detta är svenskans enda ämnesegna färg.** Allt annat formspråk (typsnitt, komponenter,
+layout) är 🔗 DELAT och ärvs oförändrat. **Code väljer aldrig färg.**
 
-Sätts som `--accent` i `css/kemi.css`. Bannerns h1-textfärg är `rgba(232,222,200,0.95)`
-(grädde, delad).
+Sätts som `--accent` i `css/svenska.css`, tillsammans med de härledda värdena:
+
+| Token | Värde | Not |
+|---|---|---|
+| `--accent` | `#8c3448` | signaturfärgen |
+| `--accent-text` | `#8c3448` | 6,0:1 mot `--paper` — duger som textfärg |
+| `--accent-hover` | `#6d2838` | |
+| `--accent-tint` | `rgba(140, 52, 72, 0.12)` | hover-ytor |
+| `--accent-ram` | `rgba(140, 52, 72, 0.35)` | ramar på väljare |
+| `--accent-2` | `#b8902a` | mässing, sekundär — som geografi |
+
+### Hero-banner och brödsmulor
+**🎨 ÄMNESEGET** (strukturen är delad, se DEL 4.5)
+
+Beslutad stilbild (Joachim 2026-09-16):
+
+- Hero: **enfärgad varm svart `#17130d`** — ingen gradient.
+- Hero-etiketten (`.avsnitt-label`) i `--accent`.
+- Hero-rubriken i EB Garamond. Sammansatta titlar sätter efterleden kursiv i vinrött:
+  `<h1>Ord<em>klasser</em></h1>`.
+- **Brödsmulorna ligger först i `.sida`**, vänsterställda, i vinrött — inte i hero-bannern.
+
+> 🔵 **Känd avvägning:** vinrött mot `#17130d` ger ≈ 2,4:1 (etiketten och `<em>` i rubriken).
+> Följer stilbilden medvetet; dokumenterad i `css/svenska.css` och tas upp separat.
+
+### En textnivå — ingen nivåväljare
+**🎨 ÄMNESEGET**
+
+Svenska publicerar **lärarens text ordagrant, i en enda nivå**. Det finns ingen
+nivåväljare (`.niva-valjare`) på någon svensk sida, och inga `📗 Enkel` / `📕 Fördjupning`.
+Varje underdel har exakt ett `.niva-innehall.brodtext` med `data-niva="standard"`.
+
+Klassnamnet `standard` behålls därför att `avsnitt.js` och `geografi.css` läser det — det är
+plattformens namn på "den synliga texten", inte ett påstående om att svenska har nivåer.
+`avsnitt.js` hoppar över nivålogiken helt när `.niva-valjare` saknas.
 
 ### Aktiv-markering — källan till alla tidigare buggar
 
 - **KNAPPAR** markeras aktiva med klassen `aktiv`
-- **INNEHÅLL** (paneler, underdel-text, nivå-artiklar) markeras aktivt genom **frånvaro**
-  av `dold`
+- **INNEHÅLL** (paneler, underdel-text) markeras aktivt genom **frånvaro** av `dold`
 - `js/avsnitt.js` togglar `dold` på innehåll och `aktiv` på knappar
 
-### Fem fällor — gör ALDRIG så här
+### Fyra fällor — gör ALDRIG så här
 
-1. **`data-niva` måste vara `"enkel"`/`"standard"`/`"fordjupning"`** — aldrig `"1"`/`"2"`/`"3"`.
-   `avsnitt.js` startar på `'standard'`; fel värde → ingen text syns.
+1. **Underdels-sektioner har klass `underdel-text`** — aldrig bara `underdel`. Bar
+   `.underdel` blir scope-rot i `avsnitt.js` och bryter flik-logiken.
 
-2. **EN delad `.niva-valjare`** i Läs-panelen, EFTER `.underdel-valjare` och UTANFÖR alla
-   `.underdel-text` — aldrig en väljare per underdel.
+2. **`data-niva="standard"`** på textblocket — aldrig `"1"` eller ett eget namn.
+   `avsnitt.js` startar på `'standard'`; fel värde → ingen text syns om en nivåväljare
+   någon gång läggs till.
 
-3. **`data-niva-nyckel` sitter på `.niva-valjare`** — aldrig på `<body>`.
+3. **Ett avsnitt med en enda del har ingen `.underdel-valjare`** — bara en
+   `.underdel-text` utan `dold`. `avsnitt.js` returnerar tidigt när inga
+   `.underdel-knapp` finns.
 
-4. **Underdels-sektioner har klass `underdel-text`** — aldrig bara `underdel`. Bar
-   `.underdel` blir scope-rot i `avsnitt.js` och bryter flik/nivå-logiken.
-
-5. **Tom `.forelasningar-lista`-container är rätt.** Skriv ALDRIG statisk HTML för
-   föreläsningskort inuti — `js/forelasningar.js` tömmer containern vid laddning och fyller
-   på från JSON. Se DEL 7.
+4. **Använd aldrig `.underdel-knapp`, `.flik` eller `.niva-valjare` för något annat
+   än sitt syfte.** `avsnitt.js` fångar alla tre på hela sidan. Nya kontroller får egna
+   klassnamn med eget prefix (se DEL 8).
 
 ### Ankarpunkter
 
 Underdels-sektioner behöver **ingen `id`**. `avsnitt.js` läser `location.hash`
-(`#a`/`#b`/`#c`) och aktiverar via `data-underdel`. Djupdykningars tillbaka-länk pekar på
-`avsnitt-...html#a/#b/#c` (rätt underdel).
+(`#a`/`#b`/`#c`) och aktiverar via `data-underdel`.
 
 ### Komplett scaffold-mall
 
@@ -212,51 +262,45 @@ Underdels-sektioner behöver **ingen `id`**. `avsnitt.js` läser `location.hash`
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{Avsnittstitel}} – {{Delområde}} – Kemi</title>
-  <link rel="stylesheet" href="../../../../css/kemi.css">
-  <link rel="stylesheet" href="../../../../css/flipcards.css">
+  <title>{{Avsnittstitel}} – {{Delkapitel}} – Svenska</title>
+  <link rel="stylesheet" href="../../../../css/geografi.css">
+  <link rel="stylesheet" href="../../../../css/svenska.css">
   <link rel="stylesheet" href="../../../../css/fonts.css">
 </head>
 <body>
 
-  <!-- ===== HERO-BANNER (mörk, patina-accent) ===== -->
+  <!-- ===== HERO-BANNER (enfärgad #17130d, etikett i vinrött) ===== -->
   <header class="hero-banner">
     <div class="hero-inner">
-      <nav class="brodsmulor" aria-label="Brödsmulor">
-        <a href="../../../../index.html">Kemi</a>
-        <span class="skiljare" aria-hidden="true">›</span>
-        <a href="../../index.html">{{Område}}</a>
-        <span class="skiljare" aria-hidden="true">›</span>
-        <a href="index.html">{{Delområde}}</a>
-        <span class="skiljare" aria-hidden="true">›</span>
-        <span class="aktuell" aria-current="page">{{N}}. {{Avsnittstitel}}</span>
-      </nav>
       <span class="avsnitt-label">Avsnitt {{n}}</span>
       <h1>{{Avsnittstitel}}</h1>
-      <p class="subtitel">— {{kort underrubrik}} —</p>
     </div>
   </header>
 
   <main class="sida">
 
+    <!-- ===== BRÖDSMULOR — i sidan, inte i heron ===== -->
+    <nav class="brodsmulor" aria-label="Brödsmulor">
+      <a href="../../../../index.html">Svenska</a>
+      <span class="skiljare" aria-hidden="true">›</span>
+      <a href="../../index.html">{{Kapitel}}</a>
+      <span class="skiljare" aria-hidden="true">›</span>
+      <a href="index.html">{{Delkapitel}}</a>
+      <span class="skiljare" aria-hidden="true">›</span>
+      <span class="aktuell" aria-current="page">{{N}}. {{Avsnittstitel}}</span>
+    </nav>
+
     <!-- ===== FLIKRAD ===== -->
     <div class="flikar-rad" role="tablist">
-      <button type="button" class="flik" data-flik="forelasning" role="tab">Föreläsning</button>
       <button type="button" class="flik aktiv" data-flik="las" role="tab">Läs</button>
       <button type="button" class="flik" data-flik="ova" role="tab">Öva</button>
       <button type="button" class="flik" data-flik="elevboken" role="tab">Elevboken</button>
     </div>
 
-    <!-- ===== FÖRELÄSNING — tom mount, JS fyller på från data/forelasningar.json.
-         Flikknappen sätts disabled av JS om inga föreläsningar finns. Se DEL 7. ===== -->
-    <section class="flik-innehall dold" data-flik="forelasning" role="tabpanel">
-      <div class="forelasningar-lista"></div>
-    </section>
-
     <!-- ===== LÄS (aktiv panel = utan dold) ===== -->
     <section class="flik-innehall" data-flik="las" role="tabpanel">
 
-      <!-- Underdelsväljare (2-4 underdelar) -->
+      <!-- Underdelsväljare — utelämnas helt om avsnittet har en enda del -->
       <div class="underdel-valjare" role="tablist" aria-label="Textval">
         <button type="button" class="underdel-knapp aktiv" data-underdel="a" role="tab">
           <span class="underdel-bokstav">A</span>
@@ -268,115 +312,37 @@ Underdels-sektioner behöver **ingen `id`**. `avsnitt.js` läser `location.hash`
         </button>
       </div>
 
-      <!-- EN delad nivåväljare — EFTER underdel-valjare, UTANFÖR underdel-text -->
-      <div class="niva-valjare" role="group" aria-label="Textnivå"
-           data-niva-nyckel="kemi-niva-{{kapitel}}-{{slug}}">
-        <button type="button" class="niva-knapp" data-niva="enkel">📗 Enkel</button>
-        <button type="button" class="niva-knapp aktiv" data-niva="standard">📘 Standard</button>
-        <button type="button" class="niva-knapp" data-niva="fordjupning">📕 Fördjupning</button>
-      </div>
-
       <!-- UNDERDEL A (aktiv = utan dold) -->
       <div class="underdel-text" data-underdel="a">
-
-        <!-- 📗 ENKEL — se DEL 2 -->
-        <div class="niva-innehall brodtext dold" data-niva="enkel">
-
-          <div class="karnpunkter">
-            <div class="karnpunkter-rubrik">🎯 Kärnpunkter</div>
-            <ul><li>{{kärnpunkt}}</li><li>{{kärnpunkt}}</li></ul>
-          </div>
-
-          <div class="bildguide">
-            <div class="bildguide-rubrik">👁 Titta efter</div>
-            <ul><li>{{vad eleven ska leta efter}}</li></ul>
-          </div>
-          <figure class="brodtext-bild enkel">
-            <img src="img/{{bild}}.webp" alt="{{rik alt-text}}">
-            <figcaption>{{kort, orienterande bildtext}}</figcaption>
-          </figure>
-
-          <p>{{enkel brödtext i LÖPANDE PROSA}}</p>
-        </div>
-
-        <!-- 📘 STANDARD (default synlig = utan dold) -->
+        <!-- En textnivå: lärarens text, ordagrant. Ingen nivåväljare. -->
         <div class="niva-innehall brodtext" data-niva="standard">
-          <p class="inledning">{{inledning}}</p>
-          <h2>{{rubrik}}</h2>
-          <p>{{standard brödtext}}</p>
-          <figure class="brodtext-bild standard">
-            <img src="img/{{bild}}.webp" alt="{{rik alt-text — IDENTISK med Enkel}}">
-            <figcaption>{{längre/analytisk bildtext}}</figcaption>
-          </figure>
+          <h2>{{Rubrik}}</h2>
+          <p>{{Lärarens text}}</p>
+          <!-- Exempelrader sätts som kursiva stycken: <p><em>…</em></p> -->
+          <!-- Mellanrubrik i en underdel: <h3>Exempel</h3> -->
         </div>
-
-        <!-- 📕 FÖRDJUPNING — i kemi TILLÅTEN med bild, se DEL 3.4.
-             Kan saknas helt för ett avsnitt, se DEL 2.4. -->
-        <div class="niva-innehall brodtext dold" data-niva="fordjupning">
-          <h2>{{rubrik}}</h2>
-          <p>{{fördjupningstext}}</p>
-        </div>
-
       </div>
 
       <!-- UNDERDEL B (dold tills vald) -->
       <div class="underdel-text dold" data-underdel="b">
-        <div class="niva-innehall brodtext dold" data-niva="enkel"><p>{{…}}</p></div>
-        <div class="niva-innehall brodtext" data-niva="standard"><p>{{…}}</p></div>
-        <div class="niva-innehall brodtext dold" data-niva="fordjupning"><p>{{…}}</p></div>
-      </div>
-
-      <!-- DJUPDYKNINGAR -->
-      <section class="djupdykningar">
-        <span class="sektion-label">Vill du veta mer?</span>
-        <div class="fordj-kort-grid">
-          <a class="fordj-kort" href="djupdykning-{{slug}}.html">
-            <span class="fordj-kort-ikon" aria-hidden="true">{{emoji}}</span>
-            <span class="fordj-kort-text">
-              <span class="fordj-kort-titel">{{Djupdykningstitel}}</span>
-              <span class="fordj-kort-sammanfattning">{{1-2 meningar.}}</span>
-            </span>
-          </a>
+        <div class="niva-innehall brodtext" data-niva="standard">
+          <h2>{{Rubrik}}</h2>
+          <p>{{…}}</p>
         </div>
-      </section>
+      </div>
 
     </section>
 
-    <!-- ===== ÖVA — tre arbetssätt (kemi-eget lager, DEL 10). Texterna i .ova-valjare kopieras
-         rakt av; flipcards-mount och kortsvar-mount pekar på kapitlets data-mapp. ===== -->
+    <!-- ===== ÖVA — monteringen byggs av ordklass-ova.js (DEL 8).
+         Finns ingen övning: <p class="brodtext">Övningarna läggs in här.</p>
+         och skripttaggen för ordklass-ova.js utelämnas. ===== -->
     <section class="flik-innehall dold" data-flik="ova" role="tabpanel">
-      <div class="ova-valjare" role="group" aria-label="Arbetssätt">
-        <span class="sektion-label">Hur vill du öva?</span>
-        <button type="button" class="ova-kort" data-arbetssatt="begrepp">
-          <span class="ova-kort-ikon" aria-hidden="true">🟢</span>
-          <span class="ova-kort-titel">Plugga begrepp</span>
-          <span class="ova-kort-beskr">Vänd kort. Ett begrepp i taget, snabb repetition.</span>
-        </button>
-        <button type="button" class="ova-kort" data-arbetssatt="kortsvar">
-          <span class="ova-kort-ikon" aria-hidden="true">✍️</span>
-          <span class="ova-kort-titel">Testa dig själv</span>
-          <span class="ova-kort-beskr">Kortsvar med rättning. Du får veta direkt vad som stämde och varför.</span>
-        </button>
-        <button type="button" class="ova-kort" data-arbetssatt="tillampa">
-          <span class="ova-kort-ikon" aria-hidden="true">🔵</span>
-          <span class="ova-kort-titel">Tillämpa</span>
-          <span class="ova-kort-beskr">Vänd kort. Frågor där du måste använda det du kan.</span>
-        </button>
-      </div>
-      <div class="flipcards-mount"
-           data-fil="../../data/flipcards/avsnitt-{{N}}-{{slug}}.json"
-           data-avsnitt="a{{N}}_{{slug}}">
-        <p class="flipcards-laddar">Laddar övningskort…</p>
-      </div>
-      <div class="kortsvar-mount"
-           data-fil="../../data/kortsvar/avsnitt-{{N}}-{{slug}}.json"></div>
+      <div class="ordova" data-fil="../../data/ova/avsnitt-{{N}}-{{slug}}.json"></div>
     </section>
 
-    <!-- ===== ELEVBOKEN ===== -->
+    <!-- ===== ELEVBOKEN — platshållare tills elevboken byggs ===== -->
     <section class="flik-innehall dold" data-flik="elevboken" role="tabpanel">
-      <div class="elevbok-fragor">
-        <p class="laddar-fragor">Laddar frågor ...</p>
-      </div>
+      <p class="brodtext">Elevbokens frågor läggs in här.</p>
     </section>
 
   </main>
@@ -388,27 +354,46 @@ Underdels-sektioner behöver **ingen `id`**. `avsnitt.js` läser `location.hash`
     const DELKAPITEL_ID = '{{delkapitel}}';
   </script>
 
-  <!-- MathJax + mhchem — SJÄLVHOSTAD, se DEL 8 -->
-  <script src="../../../../js/mathjax-config.js"></script>
-  <script src="../../../../js/mathjax/tex-mml-chtml.js" id="MathJax-script" async></script>
-
-  <script src="../../../../js/elevbok.js"></script>
   <script src="../../../../js/avsnitt.js"></script>
-  <script src="../../../../js/bildmodal.js" defer></script>
-  <script src="../../../../js/egna-fragor.js" defer></script>
-  <script src="../../../../js/avsnitt-elevbok.js" defer></script>
-  <script src="../../../../js/textbyggar-stodlarare.js" defer></script>
-  <script src="../../../../js/flipcards.js" defer></script>
-  <script src="../../../../js/kortsvar-gradering.js" defer></script>
-  <script src="../../../../js/kortsvar.js" defer></script>
-  <script src="../../../../js/ova-arbetssatt.js" defer></script>
-  <script src="../../../../js/forelasningar.js" defer></script>
+  <script src="../../../../js/ordklass-ova.js" defer></script>
   <script src="../../../../js/elevfeedback.js" defer></script>
 </body>
 </html>
 ```
 
 **Ingen `tidslinje.js`** och ingen sticky tidslinje-header — det är enbart Historia.
+**Ingen Föreläsning-flik** — svenska har inga föreläsningar ännu (DEL 7).
+
+### Delkapitel- och kapitelsidor
+
+Sidordningen är låst (Joachim 2026-09-16): **brödsmulor → korten → eventuellt övningsblock →
+kapitel- eller delkapiteltexten sist.** Eleven ska nå avsnitten utan att scrolla. Luften under
+korten sätts i `css/svenska.css`, eftersom `kapitelstart.css` förutsätter text ovanför listan.
+
+Korten är `.kapitel-kort` i `.innehallsforteckning`; ett planerat avsnitt är ett
+`<span class="kapitel-kort kap-N dimmad">`, ett publicerat ett
+`<a class="kapitel-kort kap-N" href="…">`. Titeln är `<span class="kap-titel">` och
+beskrivningen `<p class="kap-beskrivning">` — aldrig `<span>` på beskrivningen, då flyter de
+ihop till en mening.
+
+Ett delkapitel med en egen övningssida får ett verktygsblock efter korten, med plattformens
+oförändrade klasser:
+
+```html
+<section class="sektion-avgransare">
+  <div class="litet-ornament" aria-hidden="true">✦</div>
+  <span class="sektion-label">Delkapitlets övningar</span>
+  <div class="resurser-rad">
+    <a class="resurs-kort" href="blandad-ovning.html">
+      <span class="ikon" aria-hidden="true"><svg …>…</svg></span>
+      <span class="resurs-text">
+        <h4>{{Titel}}</h4>
+        <p class="resurs-beskrivning">{{En mening.}}</p>
+      </span>
+    </a>
+  </div>
+</section>
+```
 
 ---
 
@@ -442,88 +427,24 @@ analytiska kopplingar än Enkel.
 **Volym:** ~800–1100 ord per underdel
 **Ton:** Akademisk men begriplig för åk 9
 
-> Volymerna följer DELAD-basen oförändrat. Notera att en kemitext med inbakade formler läser
-> långsammare per ord än en historietext — en formelrad äter läsbudget utan att räknas som
-> ord. Ligg därför hellre i nedre delen av spannen än i övre.
+> Volymerna följer DELAD-basen oförändrat.
 
 ---
 
-## DEL 2.4 — Kemins fördjupningsnivå
-**🎨 ÄMNESEGET**
 
-Detta är den största innehållsmässiga skillnaden mot historia och geografi, och den måste
-förstås innan en fördjupning skrivs.
+### 🎨 Svenska: en nivå
 
-### Vad fördjupningen ÄR i kemi
-
-I historia och geografi är fördjupningen **en annan blick på samma sak** — historiografi,
-kontroverser, frågor utan enkla svar. Samma innehåll, mer nyans.
-
-I kemi är fördjupningen **en annan modell av samma sak.** Standardtexten ger en förenklad
-men användbar modell; fördjupningen ger en sannare. Det eleven lärde sig på standardnivå
-skrivs delvis om:
-
-| Standardnivå | Fördjupning |
-|---|---|
-| Syra avger vätejoner | Protonöverföring |
-| Elektronskal | Orbitaler |
-| Bindning som streck | Elektronpar som delas ojämnt |
-
-**Syfte:** gymnasieförberedande, riktad mot teknik- och naturprogrammet.
-
-### Modellplacering — obligatoriskt krav
-
-**En fördjupning som byter modell måste säga det uttryckligen, och säga varför den enklare
-modellen inte var fel.**
-
-Utan det upptäcker eleven en motsägelse mellan två nivåer i samma bok och drar slutsatsen
-att någon av dem ljuger — eller att kemi är godtyckligt. Det är den klassiska skadan av
-modellbyten i naturvetenskap, och den är helt undvikbar med en eller två meningar som
-placerar modellen:
-
-> *Så här långt räcker den enklare bilden. Här slutar den räcka. Därför behövs den här.*
-
-### Fördjupningen finns inte överallt
-
-Där standardmodellen håller hela vägen finns ingen sannare modell att ge, och en fördjupning
-vore utfyllnad. **Ett avsnitt kan stå färdigt och publicerat utan fördjupningsnivå.**
-
-> ⚠️ **Plattformskrav till Code:** nivåknappen `📕 Fördjupning` får **inte** leda till en tom
-> vit yta. När `data-niva="fordjupning"` saknas eller är tom ska knappen sättas **disabled**
-> — samma beteende som föreläsningsfliken redan har i `forelasningar.js`.
-> **Detta är ett nytt plattformsbeteende som måste beställas och verifieras.**
-
-### Två ingångar till en fördjupning
-
-**Från klassrummet:** Joachim ser var eleverna fastnar eller var de starka drar iväg, och
-beställer en fördjupning. Joachims innehåll, Joachims röst — Claude bearbetar.
-
-**Från texten:** Claude läser standardtexten, ser att den vilar på en modell som bara räcker
-en bit, och **föreslår**: *här borde vi ta upp detta för de starka eleverna.*
-
-> **Gränsen: Claude föreslår, Joachim avgör.** Claude skriver aldrig en fördjupning
-> självsvåldigt. Annars växer boken fördjupningar som ingen elev efterfrågat, och det som
-> skulle vara ett tecken på behov blir brus.
-
-De två ingångarna ger olika texter. En **beställd** fördjupning svarar på en fråga som redan
-ställts i klassrummet. En **föreslagen** måste själv motivera varför den finns — den ska
-kunna läsas av en stark elev som ingen skickat dit.
+Volymerna och tonen ovan är den delade basen och står oförändrade. **Svenska använder i dag
+bara en nivå** — lärarens text ordagrant, utan nivåväljare (DEL 1). Spannen är därför
+riktmärken för den enda texten, inte tre texter att skriva. Skulle svenska någon gång införa
+nivåer gäller basen som den står.
 
 ---
 
 ## DEL 3 — Bildstöd-mönstret per nivå
 **🔗 DELAD** (3.1–3.3) / **🎨 ÄMNESEGET** (3.4)
 
-### Tre bildsorter i kemi
-
-Kemi skiljer på tre sorter, med olika regler. Skillnaden ska vara synlig i markupen och
-inte bero på att någon minns regeln.
-
-| Sort | Vad | Nivåer | Komponent |
-|---|---|---|---|
-| **Strukturformel** | Kolkedjor, ringar, bindningar | Alla, inkl. fördjupning | `strukturformel` (DEL 8) |
-| **Modellbild** | Det osynliga: partikelnivå, elektroner, reaktionsförlopp | Alla, inkl. fördjupning | `brodtext-bild` |
-| **Illustration** | Foto, laborationsuppställning, kretslopp i landskapet | Enkel + Standard | `brodtext-bild` |
+Svenska har inga bilder i dag; mönstret nedan gäller den dag en bild kommer in (se 3.4).
 
 ### 3.1 📗 Enkel
 **🔗 DELAD**
@@ -548,30 +469,17 @@ Eleven känner igen bilden från Enkel när hen byter till Standard. Det skapar 
 mellan nivåerna. `alt`-texten måste vara identisk för att skärmläsare ska behandla dem som
 samma resurs.
 
-### 3.4 📕 Fördjupning — kemi avviker
-**🎨 ÄMNESEGET**
 
-**I kemi har fördjupningen bilder.** Övriga ämnen har det inte.
+### 3.4 🎨 Svenska: inga bilder ännu
 
-**Skälet, och varför det inte gäller andra ämnen:**
+Svenskboken har i dag **inga bilder** i brödtexten — grammatiken illustreras med tabeller
+(`.vintage-tabell` i `.vintage-tabell-wrapper`) och med kursiva exempelrader. Mönstret i
+3.1–3.3 gäller den dag en bild kommer in; fördjupningsnivåns bildregel är ämnesegen och
+oskriven för svenska, eftersom svenska inte har fördjupningsnivå.
 
-I geografi och historia illustrerar bilden något eleven i princip kan se — ett landskap, en
-stadsbild, ett föremål. Bilden lägger till konkretion som texten redan äger. Därför
-förenklar den i fördjupning, och därför utesluts den.
-
-I kemi är referenten **osynlig**. Joner, elektronskal, vad som händer när en syra möter en
-bas i lösningen — ingen elev har sett det, och ingen text gör det synligt hur många ord den
-än får. Bilden ersätter inte analys; **den ger analysen ett objekt att handla om.** En
-fördjupningstext om protonöverföring utan en bild av vad som flyttas är abstraktion staplad
-på abstraktion.
-
-Det osynliga blir alltså inte enklare av att avbildas — det blir **tillgängligt**.
-
-**Regler för fördjupningsbild:**
-- Strukturformler och modellbilder: tillåtna
-- Rena illustrationer (foto, labbuppställning): fortsätter utebli, som i övriga ämnen
-- Ingen bildguide (den hör till Enkel)
-- `<figure class="brodtext-bild fordjupning">`
+**Tabeller i brödtext:** `.vintage-tabell-wrapper` saknas i geografi.css:s läsbreddsregel (B2)
+och kompenseras i `css/svenska.css`, så att tabellen ligger i läsbredd (770 px) och inte i
+full sidbredd. 🔵-loggad som plattformskandidat.
 
 ---
 
@@ -607,11 +515,11 @@ eller textnivå. Frivillig fördjupning.
 - `aria-hidden="true"` på ikon-spannet
 - Sektionen har **ingen `id`**
 
-**Antal per avsnitt i kemi:** färre än i historia. Djupdykningar föddes ur historias "frågor
-utan enkla svar"; kemi har färre sådana, och det som i historia blivit en djupdykning blir
-i kemi oftare en **fördjupning**. Riktmärke: 0–2 per avsnitt.
+**Antal per avsnitt i svenska:** inga. Svenska har inga djupdykningssidor i dag — komponenten
+står här därför att den är delad och kan användas när en frivillig fördjupningssida skrivs.
 
 ---
+
 
 ### 4.2 brodtext-bild
 **🔗 DELAD**
@@ -631,20 +539,6 @@ fortsätter.
 
 **Balans:** bilden ska vara ett **stöd**, aldrig en **tröskel**. För lite text runt bilden
 gör den kontextlös, för mycket dränker den.
-
-**🎨 Kemi: ingen ram, transparent bakgrund (v1.3).** Plattformens tunna ram runt `.brodtext-bild img`
-är avstängd i kemi.css. Den fungerar på Historias och Geografis foton och målningar, men kemins
-bilder är platta illustrationer på sidans eget papper, och där ramar linjen in tomrum. Ämnesegen
-avvikelse, inte en plattformsändring. Följden för bildleveranser: **bakgrunden ska vara
-transparent** – aldrig en hårdkodad benvit eller `--paper`-färg, som låser bilden till en viss
-sidbakgrund och spricker om `--paper` ändras eller bilden läggs på ett kort. SVG:er genereras
-transparenta; AI-bilder promptas med transparent bakgrund, eller med en enhetlig kontrastfärg
-som inte förekommer i motivet och nycklas bort innan leverans (se DEL 9).
-
-**🎨 Kemi: stående bilder (v1.3).** Plattformens `width: 100%` gör en bild i porträttformat lika bred
-som läsbredden och därmed mycket hög. En bild markeras `staende: true` i `verktyg/bygg-avsnitt-konfig.js`;
-figuren får då klassen `staende` och kemi.css begränsar den till `max-height: 520px`, centrerad, med
-bredden i proportion. Liggande bilder påverkas inte. Första fall: `antacidum.webp` (Neutralisation 2 A).
 
 ---
 
@@ -696,76 +590,30 @@ bredden i proportion. Liggande bilder påverkas inte. Första fall: `antacidum.w
 ### 4.5 hero-banner
 **🔗 struktur / 🎨 färg**
 
-Se fullständig markup i DEL 1. Struktur delad med alla ämnen; färgen (`#5a9668`) ämnesegen;
+Se fullständig markup i DEL 1. Struktur delad med alla ämnen; färgen (`#8c3448`) ämnesegen;
 sökvägsdjupet fyra nivåer (DEL 0).
 
 ---
 
-### 4.6 faktaruta — NY KOMPONENT, EJ BYGGD
-**🎨 ÄMNESEGET**
-
-> ⚠️ **Status: beställning till Code.** Denna komponent finns inte i plattformen. CSS saknas.
-> Enligt DEL 6 får en komponent inte räknas som dokumenterad förrän den verifierats mot CSS,
-> JS och rendering. **Detta är kemins enda helt nya komponent** — allt annat ärvs.
-
-#### Pedagogisk funktion
-
-Faktarutan **ställer två förväxlingsbara begrepp mot varandra**. Den gör något ingen befintlig
-komponent gör: `karnpunkter` sammanfattar det viktigaste, `bildguide` förbereder en bild.
-Faktarutan isolerar en distinktion mitt i texten och säger: *det här är två saker, inte en.*
-
-Behovet är inte en engångsföreteelse. Kemi är ovanligt tät på begreppspar som elever slår
-ihop, och just de paren är där proven går fel:
-
-- Neutralpunkt / ekvivalenspunkt
-- Stark syra / koncentrerad syra
-- Atom / jon
-- Molekyl / formelenhet
-- Lösning / smälta
-
-#### Form
-
-Löpande prosa i en ruta — inte ett stelt tvåfältsformat. Prosan bär förklaringen; två
-sammanfattande rader stänger. Formen är flexibel nog för det som inte är ett rent par.
-
-```html
-<aside class="faktaruta">
-  <h3>{{Rubrik — vanligen "X och Y"}}</h3>
-
-  <p><strong>{{Begrepp A}}</strong> {{förklaring i prosa}}</p>
-
-  <p><strong>{{Begrepp B}}</strong> {{förklaring i prosa}}</p>
-
-  <p>{{ev. nyansering — när de sammanfaller, när de inte gör det}}</p>
-
-  <div class="faktaruta-sammanfattning">
-    <p><strong>{{Begrepp A}} = {{kort formel för skillnaden}}</strong></p>
-    <p><strong>{{Begrepp B}} = {{kort formel för skillnaden}}</strong></p>
-  </div>
-</aside>
-```
-
-#### Regler
-
-- `<aside>`, inte `<div>` — rutan är sidoordnad texten, inte en del av resonemanget
-- Rubriken är `<h3>`
-- Brödtexten i rutan är **prosa**, inte punktlista
-- `.faktaruta-sammanfattning` är frivillig men rekommenderad — den är det eleven minns
-- Kan innehålla formler (DEL 8) och ligga på alla tre nivåerna
-- Riktmärke: högst en per underdel. Fler betyder att texten själv behöver skrivas om.
 
 ---
 
 ## DEL 5 — Komponenter som inte är dokumenterade ännu
 **🎨 ÄMNESEGET**
 
-- `kapitel-kort` (kapitelöversikt på startsidor) — ej dokumenterad
-- `resurs-kort` (kapitelverktygs-rad) — ej dokumenterad
+- `kapitel-kort` (kapitel- och avsnittsöversikt) — används i svenska, se DEL 1, men har
+  ingen egen plattformsdokumentation
+- `resurs-kort` och `.sektion-avgransare` (verktygs- och övningsrad) — används i svenska,
+  se DEL 1, ingen egen plattformsdokumentation
 - Kapitelverktygs-sidor (`kapitelelevbok.html`, `kapitelbegreppsbank.html`,
   `sjalvskattning.html` — inte `kapitelsjalvskattning.html` som LEVERANSGUIDE DEL 2 säger;
-  Historia använder `sjalvskattning.html` och kemi följer verkligheten) — separat dokumentation
-- **`faktaruta`** — se DEL 4.6, beställd men ej byggd
-- **Klickbara begreppsord i löptext** — se DEL 12, plattformsfråga, ej kemibygge
+  Historia använder `sjalvskattning.html` och svenska följer verkligheten) — **finns inte i
+  svenska ännu**
+- **Klickbara begreppsord i löptext** — se DEL 10, plattformsfråga, inget svenskbygge
+
+**Finns i repot men används inte av någon svensk sida ännu:** `css/flipcards.css` (laddas av
+ingen sida; `css/svenska.css` har färgöverskrivningar förberedda för den dagen en
+flipcards-vy byggs).
 
 Vid första felmönster: logga som Typ C-ändring i `PLATTFORMS-ANDRINGAR.md`.
 
@@ -779,7 +627,7 @@ Vid första felmönster: logga som Typ C-ändring i `PLATTFORMS-ANDRINGAR.md`.
 Innan en komponent dokumenteras **måste minst fyra källor stämma**:
 
 1. **HTML** från referensimplementationen
-2. **CSS-regler i `css/kemi.css`** (vad som faktiskt stilsätts)
+2. **CSS-regler i `css/svenska.css`** (vad som faktiskt stilsätts)
 3. **JS-tillstånd** (vad `avsnitt.js` och andra moduler förväntar sig)
 4. **Renderad visuell verifiering i headless Chromium**
 
@@ -859,6 +707,9 @@ bryts. Står cellen tom finns ingen mätning, och regeln bärs bara av att någo
 
 ---
 
+
+---
+
 ## DEL 7 — Föreläsnings-komponenten
 **🔗 DELAD**
 
@@ -902,386 +753,152 @@ En central fil per kapitel: `kapitel/{kapitel}/data/forelasningar.json`
 
 ---
 
-## DEL 8 — Formler och notation
-**🎨 ÄMNESEGET — kemins tekniska kärna**
 
-Detta är det beslut som allt formeltungt innehåll hänger på. **Lös renderingen först,
-författa sen.**
+---
 
-### 8.1 Tre sorters notation — INTE en
+## DEL 8 — Öva-fliken: ordklassövningen
+**🎨 ÄMNESEGET**
 
-Kemitext innehåller tre olika saker som ser likadana ut men hanteras olika. Förväxlas de
-MathJax-renderas varenda `dm³` i boken.
+Svenskans Öva-flik är en egen, datadriven övning i två steg — **inte** flipcards. Motorn är
+`js/ordklass-ova.js`; allt innehåll (meningar, facit, rubriker, instruktioner och varje
+elevtext) kommer ur en JSON-fil. Samma motor kör vilken ordklass som helst med en ny fil,
+utan kodändring.
 
-| Sort | Exempel | Hantering |
-|---|---|---|
-| **Reaktioner och joner** | H₃O⁺ + OH⁻ → 2 H₂O | `\ce{}` via mhchem |
-| **Matematiska uttryck** | 1 · 10⁻⁷ mol/dm³ | Vanlig MathJax (`\(...\)`) — mhchem hanterar inte potenser |
-| **Enheter i löptext** | mol/dm³, °C, pH 7 | **Unicode rakt av, ingen rendering** |
-
-Den tredje raden är den viktigaste. Enheter förekommer i var tredje mening; att rendera
-varje förekomst vore absurt och långsamt.
-
-### 8.2 Joachim skriver Unicode — Claude konverterar
-
-**Joachim skriver formler i Unicode i löptexten**, fetstilt, som han alltid gjort:
-
-```
-H₃O⁺ + OH⁻ → 2 H₂O
-```
-
-**Claude konverterar vid bearbetning** till `\ce{}`:
-
-```
-\ce{H3O+ + OH- -> 2 H2O}
-\ce{HCl + H2O -> H3O+ + Cl-}
-\ce{H2SO4 + 2 NaOH -> Na2SO4 + 2 H2O}
-\ce{2 HCl + Ca(OH)2 -> CaCl2 + 2 H2O}
-```
-
-> ⚠️ **HÅRD REGEL: ingen text går vidare till Code med Unicode-formler kvar.**
-> Går en text förbi konverteringen hamnar H₃O⁺ i HTML som tecken, renderas aldrig, och ser
-> *nästan* rätt ut. Det är den värsta sortens fel — det upptäcks sent, i klassrummet.
-
-Detta är ett medvetet val: att tvinga Joachim att skriva `\ce{}` skulle göra varje text
-långsammare att skriva och svårare att korrekturläsa. Konverteringen ligger där den kostar
-minst.
-
-### 8.3 Markup i sidan
-
-Formel i löptext (inline):
+### Montering
 
 ```html
-<p>En oxoniumjon reagerar med en hydroxidjon och bildar två vattenmolekyler:
-\(\ce{H3O+ + OH- -> 2 H2O}\)</p>
+<div class="ordova" data-fil="../../data/ova/avsnitt-{{N}}-{{slug}}.json"></div>
+…
+<script src="../../../../js/ordklass-ova.js" defer></script>
 ```
 
-Fristående formel (display):
+Saknas monteringen ska skripttaggen också utelämnas. Sidor utan övning visar
+`<p class="brodtext">Övningarna läggs in här.</p>`.
 
-```html
-<div class="formel">\[\ce{H2SO4 + 2 NaOH -> Na2SO4 + 2 H2O}\]</div>
-```
+### Steg 1 Hitta, steg 2 Böj
 
-### 8.4 Strukturformler = BILDER, inte rendering
+- Varje ord i texten är en `<button class="ordova-ord">` — tangentbord och fokus fungerar
+  utan extra attribut.
+- Rätt ord blir gröna och läggs till i tabellen; fel ord får en kort röd markering
+  (ca 1 s) som varken räknas eller sparas; **neutrala** ord blir grå och räknas inte.
+- Räknaren visar *Hittade X av Y*, med *(+N extra)* när eleven hittat valfria ord.
+- Steg 2 är en `.vintage-tabell` med ett lemma per rad och ett `<input class="ordova-falt">`
+  per form. **Rätta tabellen** jämför efter trim, gemener och hopslagna mellanslag; ett
+  facitvärde som är en lista godkänner alla varianter.
+- Rätt fält grönt, fel rött, med tips ur `tips_tabell` (`tom`, `grundform_fel_kolumn`,
+  `dom`, `positiv_grundform`).
 
-Kolkedjor, ringar och bindningar i organisk kemi **renderas inte**. De skapas som bilder via
-Joachims prompter i ChatGPT och läggs in som bilder.
+### Egna klasser — rör inte plattformens
 
-**Code ritar aldrig kolkedjor.**
+`avsnitt.js` fångar `.flik`, `.flik-innehall`, `.underdel-knapp`, `.underdel-text`,
+`.niva-valjare` och `.niva-knapp` på hela sidan. Övningen använder därför **eget prefix**:
 
-En strukturformel är **notation, inte illustration** — samma sorts innehåll som `\ce{}`, bara
-levererad som bild av tekniska skäl. Den förenklar inte; den *är* sakinnehållet. Därför är
-den tillåten på alla tre nivåerna, inklusive fördjupning (DEL 3.4).
+`.ordova` · `.ordova-ovar` · `.ordova-valjare` / `.ordova-version` · `.ordova-delar` /
+`.ordova-del` · `.ordova-steg` · `.ordova-rubrik` · `.ordova-instruktion` ·
+`.ordova-meningar` / `.ordova-lopande` · `.ordova-ord` (`.hittad`, `.fel`, `.neutral`) ·
+`.ordova-status` / `.ordova-meddelande` / `.ordova-raknare` · `.ordova-tabell` ·
+`.ordova-hittat` · `.ordova-exempel` · `.ordova-falt` (`.ratt`, `.fel`) · `.ordova-tips` ·
+`.ordova-knappar` / `.ordova-ratta` / `.ordova-borja-om` · `.ordova-resultat`
 
-```html
-<figure class="strukturformel">
-  <img src="img/{{tema}}/{{namn}}.webp" alt="{{Strukturformel för X — beskriv bindningar och atomer}}">
-  <figcaption>{{Namn på föreningen}}</figcaption>
-</figure>
-```
+Uttrycken är lånade från plattformen (versionsväljaren från `.niva-valjare`, delflikarna från
+`.flikar-rad`, fälten från `.egen-fraga-input`, knapparna från `.lagg-till-fraga-knapp` och
+`.egen-fraga-ta-bort-knapp`). Rätt/fel-färgerna är plattformens självskattningsfärger
+`#4a6d2a` och `#b04a2a` med flipcards ljusa fyllningar `#e4ecdd` och `#f3e0d9`. Allt ligger i
+`css/svenska.css` sektion 8.
 
-Egen klass, inte `brodtext-bild` — så att skillnaden syns i markupen.
+### Två JSON-former
 
-### 8.5 Krav till Code — MathJax-uppsättning
+Formen avgörs av om fältet `delar` finns.
 
-**Tre krav, alla måste verifieras:**
+**Form A — ett avsnitt.** `avsnitt`, `ordklass`, `rubrik_steg1`, `rubrik_steg2`,
+`instruktion_steg1`, `instruktion_steg2`, `kolumn_hittat`, `kolumner[]`, `exempel`,
+`meddelanden{}`, `fel_sarskilda{}`, `tips_tabell{}`, `versioner[]`. Varje version har
+`sentences[]`, `names[]`, `genitiv{}`, `tokens{}`, `lemmas{}`.
 
-1. **mhchem-tillägget laddat.** Utan det renderas `\ce{}` inte alls.
+**Form B — flera delar i en övning** (delkapitlets blandade övning). Toppnivå: `sida`,
+`titel`, `ovar[]`, `antal_versioner`, `delar[]`. Varje del har form A:s fält plus `flik`,
+`visning` (`"meningar"` eller `"lopande"`), `exempel_lemma`, `ratt_sarskilda{}`, och varje
+version dessutom `valfria{}` och `neutrala{}`.
 
-2. **Självhostad fil — inte CDN.** Plattformens regel är att allt hostas själv. Samma sorts
-   fel som Google Fonts-läckan i åk7. MathJax laddas från `js/mathjax/`, inte från
-   `cdn.jsdelivr.net` eller motsvarande. Skäl: långsamt på Chromebooks, och trasigt om
-   skolans nät blockerar.
+Ordet klassas i tur och ordning: `ratt_sarskilda` → `exempel_lemma` → namn i genitiv →
+genitiv → namn → valfritt → token. Typen avgör om ordet räknas och ger tabellrad; namn ger
+aldrig rad, valfria räknas inte men ger rad.
 
-3. **Omkörning efter att flipcards renderat.** MathJax läser sidan **en gång**, vid laddning.
-   Flipcards ritas av JS **efteråt** — de finns inte när MathJax tittar. Ett kort med en
-   formel visar då rå text: `\ce{H2SO4 + 2 NaOH -> Na2SO4 + 2 H2O}`.
-   `flipcards.js` måste därför anropa MathJax på nytt när korten är klara.
+> **Alla fält är obligatoriska, även när värdet är tomt eller `null`.** Saknas ett fält, eller
+> har en version data som kräver ett meddelande som står `null`, visar sidan ett laddningsfel
+> med delens och versionens namn. **Motorn gissar aldrig.**
 
-**Verifiering i headless Chromium krävs på båda fallen:**
-- en formel i löptext
-- en formel på ett flipcard
+### Sparande
 
-**Felsymptom för Joachim:** om något gått fel står formeln som `\ce{...}` i stället för som
-formel. Det syns direkt.
+`localStorage`, varje läsning och skrivning i try/catch — sidan fungerar utan lagring.
 
----
+| Form | Nyckel |
+|---|---|
+| A | `svenska-ova-{avsnitt}-v{N}` + `svenska-ova-{avsnitt}-vald` |
+| B | `svenska-ova-{sida}-v{N}-{ordklass}` + `-vald` + `-del` |
 
-## DEL 9 — Färgkonvention för bilder
-**🎨 ÄMNESEGET**
+**Form A:s nycklar får aldrig ändras** — där ligger elevernas sparade arbete.
 
-Bilderna promptas individuellt — de spänner från elektronskal till reaktionsförlopp, och en
-gemensam promptmall skulle bli så vag att den inte styr något. **Ingen promptstandard.**
+### Inte med
 
-Men **atomer ska ha samma färg genom hela boken.** Ritas väte vitt i ett område och grönt i
-ett annat lär sig eleven ingenting av färgen — den blir brus. Med konsekventa färger börjar
-eleven läsa bilderna innan hen läst texten.
-
-Detta är en **uppslagstabell**, inte en mall: plocka de rader som gäller och klistra in i
-prompten.
-
-### 9.0 Bakgrund: kontrastfärg som nycklas bort (v1.3)
-
-Bildens bakgrund på sidan ska vara **transparent** (se 4.2). **Nya AI-bilder promptas med en ren
-kontrastfärg som bakgrund — `#00ff00` — som nycklas bort förlustfritt före leverans.** Motivet
-får aldrig innehålla den färgen. Skälet att inte be generatorn om "transparent" direkt är att
-resultatet ofta blir falsk transparens (ett inmålat rutmönster) eller en benvit ton som inte går
-att skilja från vita motiv.
-
-**De elva befintliga AI-bilderna** (repetition: atommodell-litium, attrahera-repellera,
-enkel-dubbel-trippel, grundamne-forening, is-och-vatten, jon-loses-i-vatten, litium-atom-och-jon,
-mattad-losning, metallbindning, polart-och-opolart; syror: stark-och-svag-syra) har **benvit
-bakgrund** (`#f0e8d5`, brusig ±4 per kanal). De ligger på dagens `--paper` och lämnas som de är.
-Ska de någon gång ligga på annan bakgrund — ett kort, ett ändrat `--paper` — behöver de göras om
-enligt regeln ovan; efterhandsnyckling ger halos och nycklar bort vita motiv (verifierat i
-Chromium 2026-09-13). Det är inte aktuellt nu.
-
-### 9.1 Grundämnen — CPK-standard
-
-CPK är den färgstandard molekylmodeller och läromedel använder. Skälet att inte hitta på
-egna: eleven möter samma färger i fysiska molekylbyggsatser, i läroböcker och i allt hen
-googlar. Egna färger skulle göra just den här boken avvikande.
-
-| Ämne | Färg | Hex |
-|---|---|---|
-| Väte (H) | Vit | `#FFFFFF` |
-| Kol (C) | Mörkgrå/svart | `#303030` |
-| Kväve (N) | Blå | `#3050F8` |
-| Syre (O) | Röd | `#FF0D0D` |
-| Svavel (S) | Gul | `#FFFF30` |
-| Klor (Cl) | Grön | `#1FF01F` |
-| Fosfor (P) | Orange | `#FF8000` |
-| Natrium (Na) | Violett | `#AB5CF2` |
-| Kalium (K) | Violett, mörkare | `#8F40D4` |
-| Kalcium (Ca) | Mörkgrön | `#3DFF00` |
-| Magnesium (Mg) | Grön | `#8AFF00` |
-| Järn (Fe) | Orangebrun | `#E06633` |
-| Koppar (Cu) | Kopparbrun | `#C88033` |
-| Zink (Zn) | Blågrå | `#7D80B0` |
-| Aluminium (Al) | Ljusgrå | `#BFA6A6` |
-| Brom (Br) | Mörkröd | `#A62929` |
-| Jod (I) | Mörkviolett | `#940094` |
-
-> **Att bekräfta:** flera CPK-färger är skrikiga på skärm (klor `#1FF01F`, kalcium `#3DFF00`).
-> Mot bokens pappersbakgrund kan de behöva dämpas något. Dämpning ska i så fall göras
-> **konsekvent för alla ämnen samtidigt**, inte ad hoc per bild.
-
-### 9.2 Laddning och elektroner — förslag, ej låst
-
-CPK täcker inte laddning och elektroner. De är pedagogiskt de viktigaste, eftersom de är
-osynliga i verkligheten och eleven bara har bilden att gå på.
-
-> **Status: förslag att bekräfta av Joachim.** Detta diskuterades i princip
-> (symbol + färg, gråskalesäkert) men inte i detalj.
-
-**Laddning** får inte bäras av färg ensam — eleven ska se skillnaden även i gråskala eller
-med färgseendebrist. **Symbol plus färg**, där symbolen (`+` / `−`) är det som bär:
-
-- Positiv jon: tydligt `+` i en badge
-- Negativ jon: tydligt `−` i en badge
-
-> ⚠️ **Kollisionsrisk att lösa:** det naturliga vore röd för positiv och blå för negativ —
-> men röd är syre och blå är kväve i CPK. En jonbild skulle få två betydelser för samma färg.
-> Badgen bör därför ha en egen, neutral färgvärld (t.ex. grå/vit badge med svart tecken),
-> eller placeras utanför atomsymbolen.
-
-**Elektroner** behöver en konsekvent framtoning så att en elektron som flyttar ser likadan ut
-i alla områden. Gul är upptaget av svavel — förslag: ljus blågrå prick med `−`.
+Facitknapp, tidtagning, poäng, slumpning och AI är medvetet bortvalda.
 
 ---
 
-### 9.3 Grundfigurer som delas mellan delkapitel (v1.4)
-**🎨 ÄMNESEGET**
-
-Normalt hör en bild till ett delkapitel och ligger i dess `img/`. Undantag: en **grundfigur** som ett senare
-delkapitel bygger vidare på. Första fallet är `k1-a10.svg` (Organisk kemi 1, *Kolets snabba kretslopp*), där
-delkapitel 3 lägger till den geologiska slingan i den bleka pilens utrymme.
-
-Regler för en grundfigur:
-
-- Den genereras av ett verktyg (`verktyg/bilder-svg-kolatomen.js`), aldrig handredigerad, så att tillägg kan
-  göras ovanpå en identisk grund.
-- De återanvändbara delarna ligger i `<g>` med **stabila id:n** – i k1-a10: `atmosfar`, `vaxt`, `djur`, `mark`,
-  `pilar`, `utpil` (den bleka streckade pilen) – och en **tom, reserverad grupp** (`geologisk-slinga`) där
-  tillägget ska in. Id:n får inte bytas när figuren återanvänds.
-- Det senare delkapitlet skriver en **egen fil** (t.ex. `k3-a…svg`) genererad ur samma grund plus tillägget; det
-  ändrar inte grundfigurens fil, så att delkapitel 1 aldrig ritas om.
-- Detta är bildfiler, inte delad plattformskod: ingen 🔵-rad i PLATTFORMS-ANDRINGAR.md.
-
----
-
-### 9.4 Energi och ljus — kemins accentfärg (v1.4)
-**🎨 ÄMNESEGET**
-
-Energi och ljus är, liksom laddning, osynliga och behöver en egen, konsekvent färg. **Varm gul `#e8c547`**
-används för ljusenergi, frigjord energi och lysande föremål i alla kemins bilder – första gången i
-leder-eller-inte (Salter 3 B, lampan), sedan i k1-a8/k1-a9 (ljusenergi in i fotosyntesen, energi ut ur
-cellandningen). Den är inte en ämnesfärg (svavel har CPK-gult `#FFFF30`, som inte används i figurer utan
-atommodeller) och får inte betyda något annat än energi/ljus. Pilar och fält i den färgen får konturer i
-`#2d4a35` som allt annat.
-
----
-
-### 9.5 Ritsätt för molekyler och allmänna formler i SVG (v1.5)
-**🎨 ÄMNESEGET**
-
-**Ett ritsätt per delkapitel.** Organisk kemi 2 *Kolväten* använder **bokstavsstil** genomgående: kolatomer som
-bokstaven C, väteatomer som H, bindningar som streck mellan bokstäverna (k2-b1–b4, c1–c2, d2; ritrutinen i
-`verktyg/bilder-svg-kolvaten.js`, DX 46, teckengrad 19). **Cirkelstilen** – fyllda kolcirklar och väteringar med H
-(k1-a3) – hör till Organisk kemi 1 *Kolatomen* och används inte i delkapitel 2. Samma molekyl ska inte ritas på två
-sätt inom ett delkapitel; ska en figur återanvändas mellan delkapitlen ritas den om i det mottagande delkapitlets stil
-(C2 etan/eten/etyn, Joachim 2026-09-15). Kulmodeller (k2-b3, modellkolumnen) är en tredje representation och ingen
-ritstil för strukturformler.
-
-**Allmänna formler i SVG.** CₙH₂ₙ₊₂, CₙH₂ₙ, CₙH₂ₙ₋₂ o.d. sätts i **löptext** som matematiska uttryck med `(...)`
-(`lib-notation.js`: `mathrm{C}_nmathrm{H}_{2n+2}`, aldrig `ce{}`). **Inuti en SVG** når MathJax inte in: där
-sätts de som SVG-text med nedsänkta index (`<tspan>`) och **kursivt n**, så att de ser ut som i löptexten (k2-c3).
-En bildspec ska inte be om `(...)` i en bild.
-
----
-
-## DEL 10 — Öva-fliken: tre arbetssätt, flipcards och kortsvar
-**🔗 flikrad och flipcards.js / 🎨 arbetssättsväljare, kortsvar, korttyper**
-
-### Tre arbetssätt utan inbördes ordning (v1.2)
-
-Öva-fliken visar en **arbetssättsväljare** (`.ova-valjare`, tre `.ova-kort`) i stället för
-flipcards.js egen startskärm:
-
-| Arbetssätt | `data-arbetssatt` | Vad som startar |
-|---|---|---|
-| Plugga begrepp | `begrepp` | flipcards, läge Nivå 1 (begreppskort) |
-| Testa dig själv | `kortsvar` | `js/kortsvar.js` – kortsvar med omedelbar rättning |
-| Tillämpa | `tillampa` | flipcards, läge Nivå 2 (modellkort) |
-
-**Den delade `flipcards.js` är orörd.** `js/ova-arbetssatt.js` är ett lager ovanpå: den döljer
-plattformens startskärm (CSS i kemi.css sektion 8), markerar rätt radioknapp och klickar
-"Börja plugga" åt eleven, och visar väljaren igen när flipcards återvänder till sin startskärm
-("Plugga igen"/"Avsluta"). Lägena Nivå 3 (redogörelsekort) och Anpassa döljs i lägesmenyn.
-
-Detta är ett **kemi-eget lager** byggt fristående från kemi (inget i koden är kemispecifikt),
-placerat i kemi tills klassrummet visat om det fungerar. Blir det bra lyfts det till plattformen;
-blir det fel kastas det. 🔵-loggat 2026-09-13.
-
-### Kortsvar – Testa dig själv
-
-`<div class="kortsvar-mount" data-fil="../../data/kortsvar/avsnitt-N-{slug}.json">`. Fasta
-frågor med facit, `antal_per_omgang` slumpade per omgång, en fråga i taget. Rätt → bekräftelse.
-Fel → facit + `forklaring` **direkt** (en elev som får veta varför efter tolv frågor minns inte
-vad hon svarade). Alla rätt → belöning. **Formativt: inget sparas** – ingen progress, ingen mastery.
-
-Rättningen (`js/kortsvar-gradering.js`, ren funktion, Node-testad med `verktyg/test-gradering.js`)
-är portad ur matematikbokens provbyggare (numeric/binary/markera/ordsvar/talfoljd) och utökad
-med `formel` (Unicode-index och laddningar normaliseras: H₂O = H2O, SO₄²⁻ = SO4^2-),
-tolerans, enhet och alternativa svar. `ord` är skiftlägesokänslig (Jon = jon); `formel` är **skiftlägeskänslig** (CO ≠ Co); ett svar som
-är rätt bortsett från skiftläge räknas som fel men får en egen förklaring om stor bokstav först.
-
-**Allmänna formler som kortsvarsfacit** (v1.5, Joachim 2026-09-16, Kolväten fråga 32): `ce{CₙH₂ₙ}` renderar fel i
-mhchem (bara 2:an nedsänkt, n upprätt), så ett `formel`-svar med n som variabel byggs med **två alternativ**: först
-mhchem i matematikläge, `C_{$n$}H_{$2n$}` – det är facit-visningen (`(ce{…})`) och ger *2n* helt nedsänkt med
-kursivt n – och sedan **den skrivbara formen utan nedsänkning**, `CnH2n`, som rättningen godkänner (första alternativet
-går inte att skriva in). `satt-ihop-kolvaten.js` gör detta automatiskt för varje svar som `lib-notation.arAllmanFormel()`
-känner igen (CₙH₂ₙ₊₂, CₙH₂ₙ, CₙH₂ₙ₋₂ …). I löptext och flipcards gäller `(mathrm{C}_nmathrm{H}_{2n})` (9.5).
-
-Leveransschemat för kortsvarsfiler står i `LEVERANSGUIDE-KEMI-TILLAGG.md` §8. Kemi har **inte**
-matematikbokens övningsmotor (inventerad 2026-09-13: generatorbaserad, ramberoende – bara
-graderaren återanvändes).
-
-### Flipcards
-
-Flipcards är det eleverna kommer använda mest i kemi.
-
-**`[formel]`-märkningen i leveranserna är informativ, inte styrande** (v1.5, Joachim 2026-09-16). Byggaren
-(`verktyg/bygg-flipcards.js`) upptäcker själv formler i fråga och svar – `ce{}` efter konvertering av Unicode-formler,
-eller ett `(…)`-uttryck som CₙH₂ₙ₊₂ – och bygger kortet därefter. Märkningen behöver därför inte vara komplett eller
-exakt; byggaren varnar när den och innehållet inte stämmer överens, men det byggda följer innehållet. Alla kort typsätts
-med MathJax efter vändning (KemiFormler-hooken), oavsett märkning. Lägg ingen tid på märkningen i nästa leverans.
-
-### Fråga och svar — inget skrivande
-
-**Kemins flipcards är rena fråga/svar-kort.** Ingen skrivyta, ingen inmatning från eleven.
-Eleven läser frågan, tänker, vänder kortet.
-
-(Skrivandet lever i Elevboken, som är en egen flik med egen filosofi.)
-
-### Korttyper
-
-Plattformen har tre: `begreppskort`, `modellkort`, `redogörelsekort`.
-
-Kemi har ett fjärde behov: **formelkort** — *den här formeln, vad betyder den?* Ett kort med
-`\ce{H2SO4 + 2 NaOH -> Na2SO4 + 2 H2O}` på framsidan.
-
-Det kan tekniskt vara ett `modellkort`, men **bara om formelrenderingen fungerar inuti
-flipcards** — se DEL 8.5, krav 3. Flipcards ritas av JS efter sidladdning, så MathJax måste
-köras om. Utan det står `\ce{}` som rå text på kortet.
-
-> **Samma fälla som Unicode-formlerna: det ser nästan rätt ut, och det upptäcks sent.**
-
-### Begreppsbanken
-
-Konventionen är att begreppsbanken härleds **1:1 ur flipcardsens `begreppskort`-id:n**, med
-`kallfil` som enda sanningskälla. Kemins begrepp är många och täta — den kopplingen kommer
-bära mer vikt här än i geografi. Skapa aldrig en definition på två ställen.
-
----
-
-## DEL 11 — Arbetsmodell och leveransflöde
+## DEL 9 — Arbetsmodell och leveransflöde
 **🎨 ÄMNESEGET**
 
 ### Vem gör vad
 
 | Steg | Vem |
 |---|---|
-| Standardtexten | **Joachim** skriver |
-| Enkel-varianten | **Claude** skapar ur standardtexten |
-| Fördjupningen | **Joachim** (ur klassrumsbehov) eller **Claude föreslår** — se DEL 2.4 |
-| Djupdykningsuppslag | **Claude** föreslår |
-| Formelkonvertering Unicode → `\ce{}` | **Claude** |
-| Bilder | **Joachim** (prompt → ChatGPT) |
+| Brödtexten | **Läraren** skriver |
+| Strukturskiss (underdelar A–F) | **Läraren**, i leveransen |
+| Övningsmeningar och facit | **Läraren**, levereras som JSON |
 | Sidbygge | **Code** |
 
-### Röst och bearbetning
+### Lärarens text är facit
 
-**Standardtexten är Joachims röst.** Claude bevarar den.
+**Texten publiceras ordagrant — inklusive stavfel och sakfel.** Code rättar aldrig i
+lärarens text. Misstänkt fel **rapporteras, rättas inte**: läraren avgör. Flera kända
+avvikelser står kvar medvetet i boken av det skälet.
 
-**Fördjupningen är också Joachims röst** när han skrivit den — till skillnad från i historia,
-där fördjupningen var Claudes produkt ur standardtexten. I kemi utgår fördjupningen från ett
-klassrumsbehov, inte från standardtexten. Claudes roll är därför stram: **stryka, strama åt,
-fånga kemiska fel, konvertera formler — aldrig skriva om meningar för att de låter bättre.**
+Tillåtna redaktionella grepp, och bara när leveransen säger det: lägga till en rubrik som
+saknas, dela en rubrikrad i `<h3>` plus stycke, och rätta ett saknat mellanslag.
 
 ### Produktionsordning per avsnitt
 
-1. Joachim skriver standardtexten (Unicode-formler)
-2. Claude konverterar formler, gör Enkel-varianten, föreslår djupdykningar
-3. Code bygger sidan
-4. **Fördjupningen kommer när den kommer** — efter att Joachim undervisat
-
-Punkt 4 betyder att ett avsnitt kan stå färdigt och publicerat med tom fördjupningsnivå.
-Se plattformskravet i DEL 2.4.
+1. Läraren levererar Läs-texten som ett färdigt HTML-fragment för Läs-panelen
+2. Code bygger sidan som en kopia av närmast liknande avsnitt och byter bara det som
+   arbetsordern listar
+3. Övningen kommer när den kommer — ett avsnitt kan stå publicerat med bara Läs-fliken
+4. Verifiering i headless Chromium, rapport per sida (DEL 6)
 
 ### Mall-och-propagera
 
-Bygg **Syror och baser** som *en* komplett enhet — ett delkapitel, alla nivåer,
-formelrendering, föreläsning. Verifiera mot Joachims öga. **Propagera först därefter.**
+Bygg **ett** avsnitt komplett, verifiera mot lärarens öga, och propagera först därefter.
+Substantiv byggdes först, Verb och Adjektiv skrevs av från det, och ordklasserna 4–10 samt
+satsdelarna 1–6 av dem i sin tur. Varje steg har diffats mot sin mall, så att bara de
+avsedda raderna skiljer.
 
 ---
 
-## DEL 12 — Framtida: klickbara begreppsord
-**Ej kemibygge — plattformsfråga**
+## DEL 10 — Framtida: klickbara begreppsord
+**Ej svenskbygge — plattformsfråga**
 
-Elever i NO-ämnena har svårt att **packa upp text**. Ett ord eleven tappat stoppar hela
-meningen. Klickbara begreppsord i löptexten — klicka, få förklaringen, stanna kvar i
-meningen — löser det på ett sätt faktarutan inte gör: rutan hjälper bara där en ruta råkar
-ligga, klickbara ord hjälper i varje mening.
+Elever har svårt att **packa upp text**. Ett ord eleven tappat stoppar hela meningen.
+Klickbara begreppsord i löptexten — klicka, få förklaringen, stanna kvar i meningen — löser
+det på ett sätt en faktaruta inte gör: rutan hjälper bara där en ruta råkar ligga, klickbara
+ord hjälper i varje mening.
 
-**Varför det inte byggs nu, och inte i kemi:**
+**Varför det inte byggs nu:**
 
 1. **Plattformen har det halvvägs redan.** Begreppsbanken och flipcardsens `begreppskort`
-   innehåller exakt dessa förklaringar, med `kallfil` som enda sanningskälla. Ett klickbart
-   ord ska hämta därifrån — inte ha egna definitioner. Byggs det med egen text får plattformen
-   två uppsättningar förklaringar som glider isär.
+   innehåller exakt sådana förklaringar, med `kallfil` som enda sanningskälla. Ett klickbart
+   ord ska hämta därifrån — inte ha egna definitioner. Byggs det med egen text får
+   plattformen två uppsättningar förklaringar som glider isär.
 
-2. **Det rör alla ämnen**, inte bara kemi. Hör hemma i lärplattformens spår.
+2. **Det rör alla ämnen**, inte bara svenska. Hör hemma i lärplattformens spår.
 
 **Sparsamhet är ett designkrav, inte en tumregel.** Varje markerat ord känns motiverat när
 man skriver det; utan spärr blir texten tät, och eleven slutar läsa meningar och börjar
@@ -1298,11 +915,17 @@ klicka sig igenom. Två regler gör sparsamheten självbevakande när komponente
 
 - **Ärvd bas:** `KOMPONENTER-INNEHALL-GEOGRAFI.md` v1.6 (2026-07-03)
 - **Scaffold-struktur:** Geografis DEL 4.5 (DOM-verifierad hero-banner) + Historias sökvägsdjup
-- **Mappstruktur:** Historiabokens `kapitel/{k}/delkapitel/{dk}/`
-- **Pilotenhet:** Syror och baser (första delkapitlet)
+- **Mappstruktur:** `kapitel/{kapitel}/delkapitel/{delkapitel}/`
+- **Referensavsnitt:** `kapitel/grammatik/delkapitel/ordklasser/avsnitt-1-substantiv.html`
+  (Läs med underdelar A–E + Öva, form A)
+- **Referens utan övning:** `…/ordklasser/avsnitt-6-prepositioner.html` (en underdel, Öva som
+  platshållare)
+- **Referens för flerdelad övning:** `…/ordklasser/blandad-ovning.html` + `blandad-ordklasser.json`
+  (form B)
 
-**CSS-referens:** `css/kemi.css` — denna fil avgör vad som faktiskt renderas.
-**JS-referens:** `js/avsnitt.js` + `js/flipcards.js` + `js/forelasningar.js`.
+**CSS-referens:** `css/geografi.css` (delad plattform) + `css/svenska.css` (bokens accenter).
+Denna kombination avgör vad som faktiskt renderas.
+**JS-referens:** `js/avsnitt.js` (delad) + `js/ordklass-ova.js` (ämneseget).
 
 När osäker — kolla referensimplementationen **plus** CSS:n **plus** JS:n. **Gissa aldrig.**
 
@@ -1312,45 +935,28 @@ När osäker — kolla referensimplementationen **plus** CSS:n **plus** JS:n. **
 
 | # | Punkt | Vem |
 |---|---|---|
-| 1 | `faktaruta` — CSS byggs, verifieras (DEL 4.6) | Code |
-| 2 | Disabled fördjupningsknapp vid tom nivå (DEL 2.4) | Code |
-| 3 | MathJax självhostad + mhchem + omkörning efter flipcards (DEL 8.5) | Code |
-| 4 | Exakt data-sökväg för flipcards-JSON (DEL 0) | Code |
-| 5 | Laddnings- och elektronfärger — förslag att bekräfta (DEL 9.2) | Joachim |
-| 6 | Dämpning av skrikiga CPK-färger mot pappersbakgrund (DEL 9.1) | Joachim |
-| 7 | Rad om splittrad DEL 3 in i geografis och historias dokument | Ramverks-chatt |
+| 1 | Vakter till V1–V14 — ingen regel vaktas av ett verktyg i det här repot (DEL 6) | Code |
+| 2 | Kontrasten vinrött mot `#17130d` ≈ 2,4:1 i hero-etikett och `<em>` (DEL 1) | Joachim |
+| 3 | `.vintage-tabell-wrapper` saknas i geografi.css läsbreddsregel B2 — kompenseras i svenska.css | Ramverks-chatt |
+| 4 | `kapitelstart.css` förutsätter text ovanför kortlistan — luften för text-under-kort sätts i svenska.css | Ramverks-chatt |
+| 5 | Elevboken och kapitelverktygen är platshållare — ingen data, ingen sida | Joachim |
+| 6 | Övningar för ordklasserna 4–10 och för satsdelarna | Joachim |
 
 ---
 
 ## Revisionshistorik
 **🎨 boklokal**
 
-- **DELAD-BAS v1.4 (2026-10-01):** Verifieringsreglerna utökade med V14 i DEL 6 — en sida i grindens lista måste ge minst en mätpunkt, och ett undantag gäller bara som rad med ett skäl grinden kan verifiera. Komplementet till V9: medlemskap garanterar inte mätning. Belagt i matematikbygget (en sida i listan gav noll blad och grinden blev grön). Byggd i matte, byggs i övriga ämnen. Inget befintligt ersatt. **DELAD-BAS höjd till v1.4** (höjs i alla ämnen samtidigt). Bokversionen i filnamnet oförändrad.
-- **DELAD-BAS v1.3 (2026-10-01):** Verifieringsreglerna utökade med V11–V13 i DEL 6 — en grind får inte ha en väg ut som hoppar mätningen; den negativa verifieringen körs i samma läge som grinden; mät aldrig något som beror på vem eller var provet körs. Alla tre belagda i matematikbygget. Regel före vakt: vakterna byggs senare, V12 kan inte vaktas mekaniskt. Inget befintligt ersatt. **DELAD-BAS höjd till v1.3** (höjs i alla ämnen samtidigt). Bokversionen i filnamnet oförändrad.
-- **DELAD-BAS v1.2 (2026-10-01):** Verifieringsreglerna kanoniserade i DEL 6 — tio verifieringsregler (V1–V10) och en arkitekturregel (A1), bevisade i matematikbygget, med kolumnen *vad vaktar den* per ämne. Inget befintligt ersatt: headless-posten i DEL 6 står kvar ordagrant och utökas. **DELAD-BAS höjd till v1.2** (höjs i alla ämnen samtidigt). Bokversionen i filnamnet oförändrad.
-- **v1.5 (2026-09-15/16):** DEL 10 – `[formel]`-märkningen är informativ (byggaren upptäcker formler själv); allmänna formler
-  som kortsvarsfacit (mhchem i matematikläge + skrivbar form); 9.5 – ett ritsätt för molekyler per delkapitel (bokstavsstil i Kolväten, cirkelstil i
-  Kolatomen) och allmänna formler i SVG som SVG-text med nedsänkta index och kursivt n; (...) endast i löptext
-  (Joachim 2026-09-15, efter arbetsorder 3–4 Kolväten).
-- **v1.4 (2026-09-14/15):** 9.3 – grundfigurer som delas mellan delkapitel (k1-a10 Kolets snabba kretslopp:
-  stabila id:n och reserverad grupp för delkapitel 3:s tillägg); 9.4 – `#e8c547` som kemins accentfärg för
-  energi och ljus (Joachim 2026-09-15). Joachims arbetsorder k1 Kolatomen.
-- **v1.3 (2026-09-13):** 4.2 – ingen ram på brödtextbilder i kemi (kemi.css), bildbakgrund ska
-  vara transparent, stående bilder via konfigflaggan staende (max-height 520 px); 9.0 – nya AI-bilder promptas med `#00ff00` som nycklas bort före leverans;
-  de elva befintliga har benvit bakgrund och görs om först om de ska ligga på annan bakgrund.
-- **v1.2 (2026-09-13):** Öva-fliken får tre arbetssätt (Plugga begrepp / Testa dig själv /
-  Tillämpa) via kemi-eget lager `js/ova-arbetssatt.js` ovanpå orörd flipcards.js, och den nya
-  komponenten kortsvar (`js/kortsvar.js` + `js/kortsvar-gradering.js`). Scaffoldens Öva-panel
-  och skriptlista uppdaterade (DEL 1), DEL 10 omskriven. Kemi-eget, kandidat till plattform.
-- **v1.1 (2026-09-12):** Rättningar efter pilotbygget (Code, beslut av Joachim). Kärnpunkter- och
-  bildguide-rubriken i scaffolden och DEL 4.3/4.4 är `<div class="…-rubrik">`, inte `<h3>` — `<h3>`
-  träffas av `.brodtext h3` och renderas som mellanrubrik. Självskattningssidan heter
-  `sjalvskattning.html` (DEL 5), som i Historia. Inga komponenter ändrade; DELAD-BAS oförändrad.
-- **v1.0 (2026-09-12):** Första versionen. Ärvd från Geografi v1.6, DELAD-BAS v1.1 oförändrad.
-  Kemispecifikt tillagt: fyra-nivåers mappstruktur med historias djup (DEL 0), signaturfärg
-  `#5a9668`, kemins fördjupningsnivå som sannare modell med obligatorisk modellplacering
-  (DEL 2.4), splittrad DEL 3 med bild tillåten i fördjupning (DEL 3.4), `faktaruta` som ny
-  komponent (DEL 4.6), formler och tredelad notation (DEL 8), CPK-färgkonvention (DEL 9),
-  flipcards som fråga/svar (DEL 10), arbetsmodell (DEL 11), klickbara begreppsord som
-  framtida plattformsfråga (DEL 12). Geografis inaktuella ljusa header-scaffold **ej ärvd** —
-  kemi har en scaffold.
+- **v1.0 Svenska (2026-10-03):** Dokumentet rensat från Kemiboken. Svenskboken skapades som
+  en kopia av Kemiboken, och det här dokumentet var fram till nu Kemibokens text med
+  svenskans namn i två tabellceller. Borttaget: kemins fördjupningsnivå, de tre bildsorterna
+  och fördjupningsbilden, faktarutan, formler och notation (MathJax, mhchem, `\ce{}`,
+  strukturformler), CPK-färgkonventionen och bildkonventionerna, kemins Öva-lager med
+  flipcards och kortsvar, kemins arbetsmodell, kemins bilagor och revisionshistorik.
+  Ersatt med svenskans egna: signaturfärg `#8c3448`, hero och brödsmulor enligt beslutad
+  stilbild, en textnivå, strukturen Grammatik → Ordklasser/Satsdelar → avsnitt → underdelar,
+  och ordklassövningen (DEL 8). **Den delade basen är oförändrad:** Princip, DEL 1:s
+  struktur från flikraden och nedåt, DEL 2, DEL 3.1–3.3, DEL 4.1–4.5, DEL 6 med
+  verifieringsreglerna V1–V14 och arkitekturregeln A1, och DEL 7 står ordagrant kvar.
+  DELAD-BAS oförändrad (v1.4).
+
